@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url('./images/bg.jpg') #0c0d10 top center repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+body, a {
+    color: #667d33;
+}
+h1, h2, h3, h4 {
+    font-weight: 800;
+}
+main {
+    width: 80vw;
+    margin: 1rem auto 2rem;
+}
+article {
+    border-bottom: 1px solid #344c0b;
+}
+.title {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.title img {
+    
+}
+#into, #moss {
+    height: 150px;
+}
+#the {
+    height: 60px;
+}

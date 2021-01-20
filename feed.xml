@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Into the Moss</title>
+        <description>A sunken raft of weeds woven into a verdant morass of sound, song and story. Broadcast on London&apos;s Resonance FM every Thursday, Into the Moss is a 14 minute drift through original music, soundscapes and liminal yarns.</description>
+        <itunes:image href="https://intothemoss.co.uk/images/intothemoss.jpg"/>
+        <language>en-uk</language>
+        <itunes:category text="Fiction">
+            <itunes:category text="Drama"/>
+        </itunes:category>
+        <itunes:category text="Fiction">
+            <itunes:category text="Comedy Fiction"/>
+        </itunes:category>
+        <link>https://intothemoss.co.uk</link>
+        <copyright>&#169; Into the Moss 2020</copyright>
+        <itunes:author>Into the Moss</itunes:author>
+        <itunes:owner>
+            <itunes:name>James Baxter, James Ferris, Ben Polhill</itunes:name>
+            <itunes:email>intothemossradio@gmail.com</itunes:email>
+        </itunes:owner>
+        <itunes:explicit>false</itunes:explicit>
+        <item>
+            <itunes:episode>1</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Plunge</title>
+            <description>Two angels by dust bitten; one cat, neither sat nor sitten.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/016.mp3" length="13446381" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/01</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/016.jpg"/>
+            <guid>itm20210114</guid>
+            <pubDate>Thu, 14 Jan 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:00</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>15</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Moonshine</title>
+            <description>Are we strolling into festivities or caught on the bottom of a sinister shoe? As a rejuvenated fox flexes its shape-shifting muscles, are we spiralling through its soft tissues?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/015.mp3" length="13224350" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/15</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/015.jpg"/>
+            <guid>itm20201217</guid>
+            <pubDate>Thu, 17 Dec 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>14</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Onesie</title>
+            <description>A fox is cannon fodder for a tradition served up with a bang, but who saw what and does someone else have eye-deers for this splattered heap who strayed from the skulk?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/014.mp3" length="13331300" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/14</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/014.jpg"/>
+            <guid>itm20201210</guid>
+            <pubDate>Thu, 10 Dec 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Lofty</title>
+            <description>Passages rob their wanderers. Gourds wheeze. New job at Lofties. Young lights flicker over pine.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/013.mp3" length="12510351" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/13</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/013.jpg"/>
+            <guid>itm20201203</guid>
+            <pubDate>Thu, 03 Dec 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Starfish</title>
+            <description>Manuscripts masticated into the masonry. Lucifer on the loo. Old boshers have a bash.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/012.mp3" length="12269527" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/12</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/012.jpg"/>
+            <guid>itm20201126</guid>
+            <pubDate>Thu, 26 Nov 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:00</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Potatoes</title>
+            <description>Oliver plunges into the nonchaotic, leaving Tom to drag the entire world into the black hole of his body. An everyday psycho terminates their scheming schematism and a seagull gets a stitch.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/011.mp3" length="10605214" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/11</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/011.jpg"/>
+            <guid>itm20201119</guid>
+            <pubDate>Thu, 19 Nov 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:03</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Futures</title>
+            <description>Down, drowned by the weeping crowds, where the sheep sink sodden as clouds, here, hear the story of Elvie.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/010.mp3" length="11504731" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/010.jpg"/>
+            <guid>itm20201112</guid>
+            <pubDate>Thu, 12 Nov 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>9</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Globby</title>
+            <description>There&apos;s little consolation in your poopy-pants words when the birds are an oily bag of bones.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/009.mp3" length="11958705" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/09</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/009.jpg"/>
+            <guid>itm20201105</guid>
+            <pubDate>Thu, 05 Nov 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:03</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>8</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Silts</title>
+            <description>At the Gobborn Seer Tavern, a perfect day leaves a couple crowing, while the radiance glimpsed at the end of the tunnel casts a long shadow over hope.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/008.mp3" length="13331336" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/08</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/008.jpg"/>
+            <guid>itm20201029</guid>
+            <pubDate>Thu, 29 Oct 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:00</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Pause</title>
+            <description>Sinking through the office floor, hair and posset, we find a monkey with expensive tastes.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/007.mp3" length="11784168" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/07</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/007.jpg"/>
+            <guid>itm20201022</guid>
+            <pubDate>Thu, 22 Oct 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:03</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Ganglia</title>
+            <description>A doctor ducks out of his responsibilities.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/006.mp3" length="12700045" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/06</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/006.jpg"/>
+            <guid>itm20201015</guid>
+            <pubDate>Thu, 15 Oct 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Shadow</title>
+            <description>Ancient ambition leads to an icky situation.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/005.mp3" length="12502331" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/005.jpg"/>
+            <guid>itm20201008</guid>
+            <pubDate>Thu, 08 Oct 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:00</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>4</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Encroaching</title>
+            <description>A lesson learned at the lathe-side turns us towards the unseemly world of dogs.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/004.mp3" length="11812891" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/04</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/004.jpg"/>
+            <guid>itm20201001</guid>
+            <pubDate>Thu, 01 Oct 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:00</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>3</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Stucco</title>
+            <description>Snoop on Pudsey&apos;s fate at Stucco Point. Warm yourself by a smouldering car wreck. 
+            Digest a stewy gambol. Scorn the ruminations of a Tudor wombler.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/003.mp3" length="13569546" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/03</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/003.jpg"/>
+            <guid>itm20200926</guid>
+            <pubDate>Thu, 26 Sep 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Submerged</title>
+            <description>Hear the thundering of a submerged heart. Discover the contents of Rita's crypt. Learn how to dissolve a chandelier.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/002.mp3" length="12152883" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/02</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/002.jpg"/>
+            <guid>itm20200917</guid>
+            <pubDate>Thu, 17 Sep 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:06</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>1</itunes:episode>
+            <itunes:season>1</itunes:season>
+            <title>Facticity</title>
+            <description>Sedated and semi-buoyant musings on consciousness from an East Anglian water park. A poet gets an amazing revelation forced upon him by his publisher. A cheese sandwich gets grilled. Librarians fight each other for fish scraps. A harvest song happens at the end.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/001.mp3" length="11194599" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s01/01</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/001.jpg"/>
+            <guid>itm20200910</guid>
+            <pubDate>Thu, 10 Sep 2020 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:03</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+    </channel>
+</rss>
