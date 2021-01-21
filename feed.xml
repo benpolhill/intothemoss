@@ -22,6 +22,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Plug</title>
+            <description>An attic nap. Words under pillow feel firmer than earth under foot. Too late to dig yourself out of your inbox. Lay down the shovel and come back in the house.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/017.mp3" length="13453729" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/02</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/017.jpg"/>
+            <guid>itm20210121</guid>
+            <pubDate>Thu, 21 Jan 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>00:14:00</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>1</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Plunge</title>
