@@ -9,17 +9,23 @@ fetch(RSS_URL)
     let html = `<h2>Season 2</h2>`;
     items.forEach((el, i) => {
       i = items.length - i;
-      const j = i.padStart(3, "0");
+      const j = i.toString().padStart(3, "0");
       html += `
         ${i == 15 ? '<h2>Season 1</h2>' : ''}
         <article>
-          <img src="https://intothemoss.co.uk/episodes/images/${j}">
-          <h3>
-            <a href="${el.querySelector("link").innerHTML}">
-              ${i}: ${el.querySelector("title").innerHTML}
-            </a>
-          </h3>
-          <p>${el.querySelector("description").innerHTML}</p>
+          <div class="thumb">
+              <a href="${el.querySelector("link").innerHTML}">
+                  <img src="https://intothemoss.co.uk/episodes/images/${j}.jpg">
+              </a>
+          </div>
+          <div class="info">
+              <h3>
+                <a href="${el.querySelector("link").innerHTML}">
+                  ${i}: ${el.querySelector("title").innerHTML}
+                </a>
+              </h3>
+              <p>${el.querySelector("description").innerHTML}</p>
+          </div>
         </article>
       `
     });
