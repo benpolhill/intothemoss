@@ -31,6 +31,7 @@ main {
 article {
     border-bottom: 1px solid #344c0b;
     display: flex;
+    flex-wrap: wrap;
 }
 article .thumb {
     width: 200px;
@@ -43,6 +44,7 @@ article .thumb {
 article .info {
     display: flex;
     flex-direction: column;
+    flex: 1 0 40%;
 }
 .info > p {
     margin-top: 0;
