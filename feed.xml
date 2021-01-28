@@ -21,7 +21,7 @@
             <itunes:email>intothemossradio@gmail.com</itunes:email>
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
-        <!-- <item>
+        <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Maundy</title>
@@ -33,7 +33,7 @@
             <pubDate>Thu, 28 Jan 2021 18:30:00 +0000</pubDate>
             <itunes:duration>00:14:01</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
-        </item> -->
+        </item>
         <item>
             <itunes:episode>2</itunes:episode>
             <itunes:season>2</itunes:season>
