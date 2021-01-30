@@ -38,6 +38,8 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
     comment=$(ffprobe -loglevel error -show_entries format_tags=comment -of default=noprint_wrappers=1:nokey=1 $f)
     released=`echo "$comment" | grep -Eo "\d*\s[A-Z][a-z][a-z]\s\d*"`
     desc=$(ffprobe -loglevel error -show_entries format_tags=TDES -of default=noprint_wrappers=1:nokey=1 $f)
+    # desc=$(sed "s/'/&apos;/g" $desc)
+    desc=$(echo "${desc//\'/&apos;}")
     album=$(ffprobe -loglevel error -show_entries format_tags=album -of default=noprint_wrappers=1:nokey=1 $f)
     season="${album: -1}"
     episode=$(ffprobe -loglevel error -show_entries format_tags=track -of default=noprint_wrappers=1:nokey=1 $f | sed 's|\(.*\)/.*|\1|')
@@ -55,7 +57,6 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
             <guid>$guid</guid>
             <pubDate>Thu, $released 18:30:00 +0000</pubDate>
             <itunes:duration>$duration</itunes:duration>
-            <comment>$comment</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>" >> $F
 done

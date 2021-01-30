@@ -32,7 +32,6 @@
             <guid>itm20210128</guid>
             <pubDate>Thu, 28 Jan 2021 18:30:00 +0000</pubDate>
             <itunes:duration>840.78</itunes:duration>
-            <comment>First broadcast 28 Jan 2021 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -46,7 +45,6 @@
             <guid>itm20210121</guid>
             <pubDate>Thu, 21 Jan 2021 18:30:00 +0000</pubDate>
             <itunes:duration>840.20</itunes:duration>
-            <comment>First broadcast 21 Jan 2021 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -60,7 +58,6 @@
             <guid>itm20210114</guid>
             <pubDate>Thu, 14 Jan 2021 18:30:00 +0000</pubDate>
             <itunes:duration>840.39</itunes:duration>
-            <comment>Broadcast 14 Jan 2021 on Resonance FM.</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -74,7 +71,6 @@
             <guid>itm20201217</guid>
             <pubDate>Thu, 17 Dec 2020 18:30:00 +0000</pubDate>
             <itunes:duration>842.92</itunes:duration>
-            <comment>First broadcast 17 Dec 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -88,7 +84,6 @@
             <guid>itm20201210</guid>
             <pubDate>Thu, 10 Dec 2020 18:30:00 +0000</pubDate>
             <itunes:duration>845.84</itunes:duration>
-            <comment>First broadcast 10 Dec 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -102,7 +97,6 @@
             <guid>itm20201203</guid>
             <pubDate>Thu, 03 Dec 2020 18:30:00 +0000</pubDate>
             <itunes:duration>842.92</itunes:duration>
-            <comment>First broadcast 03 Dec 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -116,7 +110,6 @@
             <guid>itm20201126</guid>
             <pubDate>Thu, 26 Nov 2020 18:30:00 +0000</pubDate>
             <itunes:duration>840.46</itunes:duration>
-            <comment>First broadcast 26 Nov 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -130,7 +123,6 @@
             <guid>itm20201119</guid>
             <pubDate>Thu, 19 Nov 2020 18:30:00 +0000</pubDate>
             <itunes:duration>843.15</itunes:duration>
-            <comment>First broadcast 19 Nov 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -144,21 +136,19 @@
             <guid>itm20201112</guid>
             <pubDate>Thu, 12 Nov 2020 18:30:00 +0000</pubDate>
             <itunes:duration>842.55</itunes:duration>
-            <comment>First broadcast 12 Nov 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
             <itunes:episode>9</itunes:episode>
             <itunes:season>1</itunes:season>
             <title>Globby</title>
-            <description>There's little consolation in your poopy-pants words when the birds are an oily bag of bones.</description>
+            <description>There&apos;s little consolation in your poopy-pants words when the birds are an oily bag of bones.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/009.mp3" length="12069741" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s01/09</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/009.jpg"/>
             <guid>itm20201105</guid>
             <pubDate>Thu, 05 Nov 2020 18:30:00 +0000</pubDate>
             <itunes:duration>843.81</itunes:duration>
-            <comment>First broadcast 05 Nov 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -172,7 +162,6 @@
             <guid>itm20201029</guid>
             <pubDate>Thu, 29 Oct 2020 18:30:00 +0000</pubDate>
             <itunes:duration>843.49</itunes:duration>
-            <comment>First broadcast 29 Oct 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -186,7 +175,6 @@
             <guid>itm20201022</guid>
             <pubDate>Thu, 22 Oct 2020 18:30:00 +0000</pubDate>
             <itunes:duration>840.25</itunes:duration>
-            <comment>First broadcast 22 Oct 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -200,7 +188,6 @@
             <guid>itm20201015</guid>
             <pubDate>Thu, 15 Oct 2020 18:30:00 +0000</pubDate>
             <itunes:duration>842.08</itunes:duration>
-            <comment>First broadcast 15 Oct 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -214,7 +201,6 @@
             <guid>itm20201008</guid>
             <pubDate>Thu, 08 Oct 2020 18:30:00 +0000</pubDate>
             <itunes:duration>840.78</itunes:duration>
-            <comment>First broadcast 08 Oct 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -228,35 +214,32 @@
             <guid>itm20201001</guid>
             <pubDate>Thu, 01 Oct 2020 18:30:00 +0000</pubDate>
             <itunes:duration>842.97</itunes:duration>
-            <comment>First broadcast 01 Oct 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>1</itunes:season>
             <title>Stucco</title>
-            <description>Snoop on Pudsey's fate at Stucco Point. Warm yourself by a smouldering car wreck. Digest a stewy gambol. Scorn the ruminations of a Tudor wombler.</description>
+            <description>Snoop on Pudsey&apos;s fate at Stucco Point. Warm yourself by a smouldering car wreck. Digest a stewy gambol. Scorn the ruminations of a Tudor wombler.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/003.mp3" length="13750508" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s01/03</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/003.jpg"/>
             <guid>itm20200926</guid>
             <pubDate>Thu, 26 Sep 2020 18:30:00 +0000</pubDate>
             <itunes:duration>840.59</itunes:duration>
-            <comment>First broadcast 26 Sep 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
             <itunes:episode>2</itunes:episode>
             <itunes:season>1</itunes:season>
             <title>Submerged</title>
-            <description>Hear the thundering of a submerged heart. Discover the contents of Rita's crypt. Learn how to dissolve a chandelier.</description>
+            <description>Hear the thundering of a submerged heart. Discover the contents of Rita&apos;s crypt. Learn how to dissolve a chandelier.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/002.mp3" length="12272751" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s01/02</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/002.jpg"/>
             <guid>itm20200917</guid>
             <pubDate>Thu, 17 Sep 2020 18:30:00 +0000</pubDate>
             <itunes:duration>846.63</itunes:duration>
-            <comment>First broadcast 17 Sep 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
@@ -270,7 +253,6 @@
             <guid>itm20200910</guid>
             <pubDate>Thu, 10 Sep 2020 18:30:00 +0000</pubDate>
             <itunes:duration>843.62</itunes:duration>
-            <comment>First broadcast 10 Sep 2020 on Resonance 104.4 FM (www.resonancefm.com)</comment>
             <itunes:explicit>false</itunes:explicit>
         </item>
     </channel>
