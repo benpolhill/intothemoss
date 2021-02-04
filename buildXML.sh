@@ -1,7 +1,12 @@
 #!/bin/bash
 
-F=./feed2.xml
-URL="https://intothemoss.co.uk"
+F=./feed.xml
+
+# Prod:
+URL="https://intothemoss.co.uk/"
+
+# Dev:
+#URL="./"
 
 rm $F
 
@@ -30,11 +35,13 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
         <itunes:explicit>false</itunes:explicit>" >> $F
 
 for f in $(ls -r ./episodes/audio/*.mp3); do
+    echo "Processing $f"
     file=${f##*/}
     index="${file%.*}"
     size=$(wc -c $f | awk '{print $1}')
     guid=$(ffprobe -loglevel error -show_entries format_tags=TGID -of default=noprint_wrappers=1:nokey=1 $f)
     title=$(ffprobe -loglevel error -show_entries format_tags=title -of default=noprint_wrappers=1:nokey=1 $f)
+    echo "$guid: \"$title\""
     comment=$(ffprobe -loglevel error -show_entries format_tags=comment -of default=noprint_wrappers=1:nokey=1 $f)
     released=`echo "$comment" | grep -Eo "\d*\s[A-Z][a-z][a-z]\s\d*"`
     desc=$(ffprobe -loglevel error -show_entries format_tags=TDES -of default=noprint_wrappers=1:nokey=1 $f)

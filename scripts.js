@@ -1,4 +1,4 @@
-const RSS_URL = `https://intothemoss.co.uk/feed.xml`;
+const RSS_URL = `./feed.xml`;
 
 fetch(RSS_URL)
   .then(response => response.text())
@@ -15,7 +15,7 @@ fetch(RSS_URL)
         <article>
           <div class="thumb">
               <a href="${el.querySelector("link").innerHTML}">
-                  <img src="https://intothemoss.co.uk/episodes/images/${j}.jpg">
+                  <img src="./episodes/images/${j}.jpg">
               </a>
           </div>
           <div class="info">
