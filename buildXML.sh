@@ -3,7 +3,7 @@
 F=./feed.xml
 
 # Prod:
-URL="https://intothemoss.co.uk/"
+URL="https://intothemoss.co.uk"
 
 # Dev:
 #URL="./"
