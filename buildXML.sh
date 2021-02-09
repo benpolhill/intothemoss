@@ -43,7 +43,8 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
     title=$(ffprobe -loglevel error -show_entries format_tags=title -of default=noprint_wrappers=1:nokey=1 $f)
     echo "$guid: \"$title\""
     comment=$(ffprobe -loglevel error -show_entries format_tags=comment -of default=noprint_wrappers=1:nokey=1 $f)
-    released=`echo "$comment" | grep -Eo "\d*\s[A-Z][a-z][a-z]\s\d*"`
+    released=`echo "$comment" | grep -Eo "[0-9]+\s[A-Z][a-z][a-z]\s[0-9]{4}"`
+    echo "released: $released"
     desc=$(ffprobe -loglevel error -show_entries format_tags=TDES -of default=noprint_wrappers=1:nokey=1 $f)
     # desc=$(sed "s/'/&apos;/g" $desc)
     desc=$(echo "${desc//\'/&apos;}")
