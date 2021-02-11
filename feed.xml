@@ -22,6 +22,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Jelly</title>
+            <description>Dino diner in watery grave; Dream teacher pizza shame; Dazzling Dad&apos;s canon comeuppance.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/020.mp3" length="13096536" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/020.jpg"/>
+            <guid>itm20210211</guid>
+            <pubDate>Thu, 11 Feb 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.39</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>4</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Hatch</title>
