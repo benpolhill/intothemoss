@@ -22,6 +22,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Sweats</title>
+            <description>Weep in the wake of a Cornish steamboat; weep for a lesson well learned; weep for matched socks in a silver Mondeo; weep for a love lost to lust; and weep once more for weeping&apos;s sake.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/021.mp3" length="13296029" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/06</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/021.jpg"/>
+            <guid>itm20210218</guid>
+            <pubDate>Thu, 18 Feb 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.59</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Jelly</title>
