@@ -12,8 +12,9 @@
         <ul id="playlists"></ul>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="./scripts.js"></script>
-<button onclick="authenticate().then(loadClient)">authorize and load</button>
-<button onclick="execute()">execute</button>
+    <script>document.onload(setTimeout( ()=> loadClient().then(execute), 250))</script>
+<!-- <button onclick="authenticate().then(loadClient)">authorize and load</button> -->
+<!-- <button onload="loadClient().then(execute)">execute</button> -->
 
     </main>
 </body>

@@ -42,6 +42,9 @@ function execute() {
     },
     function(err) { console.error("Execute error", err); });
 }
+
 gapi.load("client:auth2", function() {
     gapi.auth2.init({client_id: "177488418454-8k6istlnfs6p6mhfqssi0e8gnkpcilo4.apps.googleusercontent.com"});
 });
+
+// document.onload(loadClient().then(execute));
