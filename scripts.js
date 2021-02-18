@@ -1,6 +1,6 @@
-const RSS_URL = `./feed.xml`;
+const RSS = `./feed.xml`;
 
-fetch(RSS_URL)
+fetch(RSS)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(data => {
@@ -33,3 +33,4 @@ fetch(RSS_URL)
     });
     document.getElementsByTagName('main')[0].insertAdjacentHTML("beforeend", html);
   });
+  
