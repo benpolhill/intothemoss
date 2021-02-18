@@ -9,13 +9,15 @@ fetch(RSS_URL)
     let html = `<h2>Season 2</h2>`;
     items.forEach((el, i) => {
       i = items.length - i;
-      const j = i.toString().padStart(3, "0");
+      const pad = (i, n=2) => i.toString().padStart(n, "0");
+      const episodePath = i > 15 ? `s02/${pad(i - 15)}` : `s01/${pad(i)}`;
       html += `
         ${i == 15 ? '<h2>Season 1</h2>' : ''}
         <article>
           <div class="thumb">
               <a href="${el.querySelector("link").innerHTML}">
-                  <img src="./episodes/images/${j}.jpg">
+              <a href="./episodes/${episodePath}">
+                  <img src="./episodes/images/${pad(i,3)}.jpg">
               </a>
           </div>
           <div class="info">
