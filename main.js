@@ -2,6 +2,7 @@ import routerInstance from './routes.js'
 
 window.onload = () => {
     let root = document.getElementById('app');
+    let h1 = document.getElementsByTagName('h1')[0];
 
     let currentPath = window.location.pathname;
     console.log(`currentPath: ${currentPath}`);
@@ -30,6 +31,7 @@ window.onload = () => {
             root.innerHTML = `This route is not defined`
         } else {
             window.history.pushState({}, '', routeInfo.path)
+            h1.innerHTML = routeInfo.name;
             root.innerHTML = `You are on the ${routeInfo.name} path!`
         }
     }
