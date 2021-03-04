@@ -1,49 +1,59 @@
 import routerInstance from './routes.js'
+import views from './views.js'
+
+window.onreload = () => {
+    setTimeout( () => console.log('RELOADED'), 1500);
+}
 
 window.onload = () => {
-    let root = document.getElementById('app');
-    let h1 = document.getElementsByTagName('h1')[0];
-
+    const main = document.getElementById('main');
+    const pageTitle = document.getElementsByTagName('title')[0];
     let currentPath = window.location.pathname;
-    console.log(`currentPath: ${currentPath}`);
+    let view = views.filter(v => v.route === currentPath)[0];
     if (currentPath === '/') {
-        root.innerHTML = 'You are on the home page'
+        main.innerHTML = view.markup;
     } else {
         // Check if route exists in routerInstance
         let route = routerInstance.routes.filter(r => r.path === currentPath)[0];
         if (route) {
-            root.innerHTML = `You are on the ${route.name} path`
+            main.innerHTML = view.markup;
         } else {
-            root.innerHTML = `Route not defined!`
+            main.innerHTML = `Route not defined!`
         }
     }
 
-    let navigate = e => {
-        console.log('navigating to...');
-        //e.preventDefault;
-        let route = e.target.pathname;
-        console.log(route);
-
+    let navigate = route => {
         // Redirect to the router instance
         let routeInfo = routerInstance.routes.filter(r => r.path === route)[0]
+        let view = views.filter(v => v.route === route)[0];
         if (!routeInfo) {
             window.history.pushState({}, '', 'error')
-            root.innerHTML = `This route is not defined`
+            main.innerHTML = `This route is not defined`
         } else {
-            window.history.pushState({}, '', routeInfo.path)
-            h1.innerHTML = routeInfo.name;
-            root.innerHTML = `You are on the ${routeInfo.name} path!`
+            window.history.pushState({}, '', routeInfo.path);
+            pageTitle.innerHTML = `Into the Moss | ${view.title}`;
+            main.innerHTML = view.markup;
         }
     }
 
     let definedRoutes = Array.from(document.getElementsByClassName('router-link'));
-    console.log(definedRoutes);
+    let routeHistory = [];
 
     definedRoutes.forEach(route => {
         route.addEventListener('click', e => {
             e.preventDefault();
-            navigate(e);
+            navigate(e.target.pathname);
+            routeHistory = [...routeHistory, e.target.pathname];
         })
     })
+
+    window.onpopstate = () => {
+        // Back
+        let lastRoute = routeHistory.pop();
+        let navTo = routeHistory[routeHistory.length - 1] || '/';
+        navigate(navTo);
+        // Forward? who cares
+    }
+
 
 }
