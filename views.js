@@ -1,4 +1,18 @@
-let epList = ['1','2','3','4','5'];
+let epList = [
+    {'episode': '1',
+      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+    {'episode': '2',
+      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+    {'episode': '3',
+      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+    {'episode': '4',
+      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+    {'episode': '5',
+      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+    {'episode': '6',
+      'link': 'https://intothemoss.co.uk/episodes/s01/01'}
+];
+
 let views = [{
         route: "/",
         title: "Home",
@@ -20,9 +34,11 @@ let views = [{
     }, {
         route: "/episodes/s01",
         title: "Season 1",
-        markup: `<p>
-            ${epList.forEach(ep => 'hello')}
-        </p>`
+        markup: `<ul>
+            ${epList.map(ep => {
+                return `<li><a href='${ep.link}'>Episode ${ep.episode}</a></li>`;
+            }).join('')}
+        </ul>`
     }, {
         route: "/episodes/s02",
         title: "Season 2",
