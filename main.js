@@ -18,7 +18,7 @@ window.onload = () => {
         if (route) {
             main.innerHTML = view.markup;
         } else {
-            main.innerHTML = `Route not defined!`
+            main.innerHTML = `Route is not defined!`
         }
     }
 
