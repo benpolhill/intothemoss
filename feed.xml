@@ -22,6 +22,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>8</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Blam</title>
+            <description>Barking in the churchyard, in a static swamp, on the trail of a cinecidal director... Action!</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/023.mp3" length="13553524" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/08</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/023.jpg"/>
+            <guid>itm20210304</guid>
+            <pubDate>Thu, 04 Mar 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>841.87</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>7</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Succour</title>
