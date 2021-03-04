@@ -1,9 +1,9 @@
 import routerInstance from './routes.js'
 import views from './views.js'
 
-window.onreload = () => {
-    setTimeout( () => console.log('RELOADED'), 1500);
-}
+// window.onreload = () => {
+//     setTimeout( () => console.log('RELOADED'), 1500);
+// }
 
 window.onload = () => {
     const main = document.getElementById('main');
