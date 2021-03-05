@@ -59,4 +59,4 @@ epList.forEach(ep => {
 console.log('views:');
 console.log(views);
 
-export default views
+export default views;
