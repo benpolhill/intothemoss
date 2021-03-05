@@ -1,6 +1,7 @@
 import routerInstance from './routes.js'
 import views from './views.js'
 
+const URL = "https://dev.intothemoss.co.uk"
 // window.onreload = () => {
 //     setTimeout( () => console.log('RELOADED'), 1500);
 // }
@@ -15,6 +16,7 @@ window.onload = () => {
     } else {
         // Check if route exists in routerInstance
         let route = routerInstance.routes.filter(r => r.path === currentPath)[0];
+        console.log(`route on load: ${route}`);
         if (route) {
             main.innerHTML = view.markup;
         } else {
@@ -26,6 +28,7 @@ window.onload = () => {
         // Redirect to the router instance
         let routeInfo = routerInstance.routes.filter(r => r.path === route)[0]
         let view = views.filter(v => v.route === route)[0];
+        let definedRoutes = Array.from(document.getElementsByClassName('router-link'));
         if (!routeInfo) {
             window.history.pushState({}, '', 'error')
             main.innerHTML = `This route is not defined`

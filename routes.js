@@ -42,7 +42,7 @@ console.log(typeof(routerInstance));
 // Make a route item for each episode in epList and append it to the router instance
 epList.forEach(ep => {
     let epRoute = {
-        route: ep.link,
+        path: ep.link,
         name: `Episode ${ep.episode}`
     };
     routerInstance.routes = [...routerInstance.routes, epRoute];
