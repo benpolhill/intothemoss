@@ -1,16 +1,16 @@
 let epList = [
     {'episode': '1',
-      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+      'link': '/episodes/s01/01'},
     {'episode': '2',
-      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+      'link': '/episodes/s01/02'},
     {'episode': '3',
-      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+      'link': '/episodes/s01/03'},
     {'episode': '4',
-      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+      'link': '/episodes/s01/04'},
     {'episode': '5',
-      'link': 'https://intothemoss.co.uk/episodes/s01/01'},
+      'link': '/episodes/s01/05'},
     {'episode': '6',
-      'link': 'https://intothemoss.co.uk/episodes/s01/01'}
+      'link': '/episodes/s01/06'}
 ];
 
 let views = [{
@@ -36,7 +36,7 @@ let views = [{
         title: "Season 1",
         markup: `<ul>
             ${epList.map(ep => {
-                return `<li><a href='${ep.link}'>Episode ${ep.episode}</a></li>`;
+                return `<li><a class='router-link' href='${ep.link}'>Episode ${ep.episode}</a></li>`;
             }).join('')}
         </ul>`
     }, {
@@ -45,5 +45,18 @@ let views = [{
         markup: `<h1>Season 2</h1>`
     }
 ];
+
+// Make a view object for each episode in epList and append it to the views array
+epList.forEach(ep => {
+    let epView = {
+        route: ep.link,
+        title: `Episode ${ep.episode}`,
+        markup: `<h2>Episode ${ep.episode}</h2>`
+    };
+    views = [...views, epView];
+});
+
+console.log('views:');
+console.log(views);
 
 export default views
