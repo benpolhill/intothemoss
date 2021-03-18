@@ -22,11 +22,24 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Gland</title>
+            <description>Bread &amp; butter, rice &amp; potato, lump &amp; leg: conclude your slop around Peppin&apos;s Fair.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/025.mp3" length="13617216" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/025.jpg"/>
+            <guid>itm20210318</guid>
+            <pubDate>Thu, 18 Mar 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.75</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>9</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Bolt</title>
             <description>Roll up for the Grabbits, and the Lump and the Leg, here consuming or consumed.</description>
-            <enclosure url="https://intothemoss.co.uk/episodes/audio/024.mp3" length="13614836" type="audio/mpeg" />
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/024.mp3" length="13779444" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s02/09</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/024.jpg"/>
             <guid>itm20210311</guid>
