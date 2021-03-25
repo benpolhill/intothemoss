@@ -22,6 +22,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Jar</title>
+            <description>What flies circle this tempting treat, shedding their inventory in the poem of empty vessels?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/026.mp3" length="14702176" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/11</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/026.jpg"/>
+            <guid>itm20210325</guid>
+            <pubDate>Thu, 25 Mar 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>10</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Gland</title>
