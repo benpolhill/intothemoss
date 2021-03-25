@@ -56,7 +56,7 @@ epList.forEach(ep => {
     views = [...views, epView];
 });
 
-console.log('views:');
-console.log(views);
+// console.log('views:');
+// console.log(views);
 
 export default views;

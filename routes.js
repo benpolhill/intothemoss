@@ -1,3 +1,66 @@
+const RSS = `./feed.xml`;
+
+// Get an array of 'items' from the RSS
+// async function getItems() {
+//   const response = await fetch(RSS);
+//   const data = new DOMParser().parseFromString(response, "application/xml");
+//   // const data = new window.DOMParser().parseFromString(response.text(), "text/xml");
+//   console.log('We has haters:');
+//   console.log(data);
+//   const items = data.querySelectorAll('item');
+//   console.log('items?:');
+//   console.log(items);
+// } 
+
+// const parser = new DOMParser();
+
+// const xmlDoc = fetch("./feed.xml").then(response => response.text());
+// const feed = parser.parseFromString(xmlDoc, "application/xml");
+
+// console.log('xmlDoc:');
+// console.log(xmlDoc);
+// console.log('feed:');
+// console.log(feed);
+
+// const xhr = new XMLHttpRequest();
+
+// xhr.onload = function() {
+//   dump(xhr.responseXML.documentElement.nodeName);
+// }
+// xhr.onerror = function() {
+//   dump("Error while getting XML.");
+// }
+// xhr.open("GET", "feed.xml");
+// xhr.responseType = "document";
+// xhr.send();
+// console.log(xhr);
+
+// const parser = new DOMParser();
+// const xmlDoc = xhr.response;
+
+// console.log(xmlDoc);
+
+// getItems();
+
+const itemsArr = [];
+
+fetch(RSS)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    const items = data.querySelectorAll('item');
+    // console.log(items);
+    items.forEach(item => {
+      itemsArr.push(item);
+    })
+  });
+
+console.log(itemsArr);
+// console.log('Will we have items here?:');
+// console.log(myItems);
+
+
+
 let epList = [
     {'episode': '1',
       'link': '/episodes/s01/01'},
@@ -37,7 +100,7 @@ let routerInstance = new Router('routerInstance', [{
         name: "Season 2"
     }
 ]);
-console.log(typeof(routerInstance));
+// console.log(typeof(routerInstance));
 
 // Make a route item for each episode in epList and append it to the router instance
 epList.forEach(ep => {
@@ -48,7 +111,7 @@ epList.forEach(ep => {
     routerInstance.routes = [...routerInstance.routes, epRoute];
 });
 
-console.log('routerInstance:');
-console.log(routerInstance);
+// console.log('routerInstance:');
+// console.log(routerInstance);
 
 export default routerInstance;
