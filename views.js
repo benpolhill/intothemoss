@@ -1,3 +1,5 @@
+import response from './response.js';
+
 let epList = [
     {'episode': '1',
       'link': '/episodes/s01/01'},
