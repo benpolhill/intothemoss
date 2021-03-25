@@ -46,8 +46,8 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
     released=`echo "$comment" | grep -Eo "[0-9]+\s[A-Z][a-z][a-z]\s[0-9]{4}"`
     echo "released: $released"
     desc=$(ffprobe -loglevel error -show_entries format_tags=TDES -of default=noprint_wrappers=1:nokey=1 $f)
-    # desc=$(sed "s/'/&apos;/g" $desc)
     desc=$(echo "${desc//\'/&apos;}")
+    desc=$(echo "${desc// & / &amp; }")
     album=$(ffprobe -loglevel error -show_entries format_tags=album -of default=noprint_wrappers=1:nokey=1 $f)
     season="${album: -1}"
     episode=$(ffprobe -loglevel error -show_entries format_tags=track -of default=noprint_wrappers=1:nokey=1 $f | sed 's|\(.*\)/.*|\1|')
