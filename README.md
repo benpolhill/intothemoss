@@ -1,17 +1,17 @@
 # Into the Moss Website
 
 ## Episode release workflow
-## Encode the MP3
+### Encode the MP3
 
 The podcast MP3 should be encoded for optimised streaming. Use VBR quality 5. This can be done with [FFmpeg](https://ffmpeg.org/download.html) using this command:
 ```bash
 ffmpeg -i 001.wav -c:a libmp3lame -q:a 5 001.mp3
 ``` 
 The MP3 is then saved in `/episodes/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three digits, i.e. 022.mp3.
-## Save episode artwork
+### Save episode artwork
 
 The images should be exported as Jpeg at 1400x1400, with quality set around 10, so file size is kept below 200K. The image is saved in `/episodes/images/[EPISODE_NUMBER].jpg` 
-## Tag the MP3
+### Tag the MP3
 
 Use the [ID3 Editor](http://www.pa-software.com/id3editor/) and ensure the following fields are filled in:
 - Title
@@ -24,7 +24,7 @@ Use the [ID3 Editor](http://www.pa-software.com/id3editor/) and ensure the follo
 Other fields (like image) may be filled, but are not essential for the feed build. See screenshots below for what to fill in.
 ![ID3 fields 1](images/ID3Tag1.png)
 ![ID3 fields 2](images/ID3Tag2.png)
-## Podcast publishing
+### Podcast publishing
 
 Podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.co.uk/feed.xml](https://intothemoss.co.uk/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
 
