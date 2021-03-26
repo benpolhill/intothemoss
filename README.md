@@ -15,8 +15,8 @@ Because of this, it's important to tag each MP3 correctly. Use the [ID3 Editor](
 
 Other fields (like image) may be filled, but are not essential for the feed build.
 
-![ID3 fields 1]('./images/ID3Tag1.png')
-![ID3 fields 2]('./images/ID3Tag2.png')
+![ID3 fields 1](images/ID3Tag1.png)
+![ID3 fields 2](images/ID3Tag2.png)
 
 The `main` branch of this repository is pulled by the intothemoss.co.uk host server every Thursday at 18:30 via the following cron task:
 ```bash
