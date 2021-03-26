@@ -30,7 +30,7 @@ Podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work
 
 The XML file is built using the [ID3 metadata](https://help.podbean.com/support/solutions/articles/25000021709-what-is-an-id3-tag-) in each MP3, by running the buildXML script:
 ```bash
-sh buildXML.sh 
+./buildXML.sh 
 ```
 This script loops through each MP3 file in the /episodes/audio folder, parsing the relevant ID3 tags (title, description, link etc) and adding them to the XML feed. The feed must conform to [Apple's technical requirements](https://itunespartner.apple.com/podcasts/articles/podcast-requirements-3058) so it's important to tag each MP3 correctly. If you're healthily paranoid, use an [XML validator](https://castfeedvalidator.com/?url=https://intothemoss.co.uk/feed.xml). 
 ### 5. Push this repository
