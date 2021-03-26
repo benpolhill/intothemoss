@@ -11,9 +11,7 @@ URL="https://intothemoss.co.uk"
 rm $F
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<rss version=\"2.0\"
-    xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"
-    xmlns:content=\"http://purl.org/rss/1.0/modules/content/\">
+<rss version=\"2.0\" xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\">
     <channel>
         <title>Into the Moss</title>
         <description>A sunken raft of weeds woven into a verdant morass of sound, song and story. Broadcast on London&apos;s Resonance FM every Thursday, Into the Moss is a 14 minute drift through original music, soundscapes and liminal yarns.</description>
