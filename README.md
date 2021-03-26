@@ -1,17 +1,19 @@
 # Into the Moss Website
 
-## Encoding MP3
+## Episode release workflow
+## Encode the MP3
 
-MP3 should be encoded for optimised streaming. Use VBR quality 5. This can be done with [FFmpeg](https://ffmpeg.org/download.html) using this command:
+The podcast MP3 should be encoded for optimised streaming. Use VBR quality 5. This can be done with [FFmpeg](https://ffmpeg.org/download.html) using this command:
 ```bash
 ffmpeg -i 001.wav -c:a libmp3lame -q:a 5 001.mp3
 ``` 
-## Podcast publishing workflow
+The MP3 is then saved in `/episodes/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three digits, i.e. 022.mp3.
+## Save episode artwork
 
-Podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.co.uk/feed.xml](https://intothemoss.co.uk/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
+The images should be exported as Jpeg at 1400x1400, with quality set around 10, so file size is kept below 200K. The image is saved in `/episodes/images/[EPISODE_NUMBER].jpg` 
+## Tag the MP3
 
-The XML file is built using the [ID3 metadata](https://help.podbean.com/support/solutions/articles/25000021709-what-is-an-id3-tag-) in each MP3. The `buildXML.sh` script loops through each MP3 file in the /episodes/audio folder, parsing the relevant ID3 tags (title, description, link etc) and adding them to the feed item. 
-Because of this, it's important to tag each MP3 correctly. Use the [ID3 Editor](http://www.pa-software.com/id3editor/) and ensure the following fields are filled in:
+Use the [ID3 Editor](http://www.pa-software.com/id3editor/) and ensure the following fields are filled in:
 - Title
 - Album (i.e. Season)
 - Comment (must include date in format: DD Mon YYYY)
@@ -22,6 +24,16 @@ Because of this, it's important to tag each MP3 correctly. Use the [ID3 Editor](
 Other fields (like image) may be filled, but are not essential for the feed build. See screenshots below for what to fill in.
 ![ID3 fields 1](images/ID3Tag1.png)
 ![ID3 fields 2](images/ID3Tag2.png)
+## Podcast publishing
+
+Podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.co.uk/feed.xml](https://intothemoss.co.uk/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
+
+The XML file is built using the [ID3 metadata](https://help.podbean.com/support/solutions/articles/25000021709-what-is-an-id3-tag-) in each MP3, by running the buildXML script:
+```bash
+sh buildXML.sh 
+```
+This script loops through each MP3 file in the /episodes/audio folder, parsing the relevant ID3 tags (title, description, link etc) and adding them to the XML feed. Because of this, it's important to tag each MP3 correctly, as detailed above. 
+
 
 The `main` branch of this repository is pulled by the intothemoss.co.uk host server every Thursday at 18:30 via the following cron task:
 ```bash
