@@ -24,7 +24,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
             <itunes:category text=\"Comedy Fiction\"/>
         </itunes:category>
         <link>$URL</link>
-        <copyright>&#169; Into the Moss 2020-2021</copyright>
+        <copyright>&#xA9; Into the Moss 2020-2021</copyright>
         <itunes:author>Into the Moss</itunes:author>
         <itunes:owner>
             <itunes:name>James Baxter, James Ferris, Ben Polhill</itunes:name>
