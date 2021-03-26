@@ -1,5 +1,11 @@
 # Into the Moss Website
 
+## Encoding MP3
+
+MP3 should be encoded for optimised streaming. Use VBR quality 5. This can be done with [FFmpeg](https://ffmpeg.org/download.html) using this command:
+```bash
+ffmpeg -i 001.wav -c:a libmp3lame -q:a 5 001.mp3
+``` 
 ## Podcast publishing workflow
 
 Podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.co.uk/feed.xml](https://intothemoss.co.uk/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
@@ -13,8 +19,7 @@ Because of this, it's important to tag each MP3 correctly. Use the [ID3 Editor](
 - Identifier (in Podcast tab, format: itmYYYYMMDD)
 - Description (in Podcast tab)
 
-Other fields (like image) may be filled, but are not essential for the feed build.
-
+Other fields (like image) may be filled, but are not essential for the feed build. See screenshots below for what to fill in.
 ![ID3 fields 1](images/ID3Tag1.png)
 ![ID3 fields 2](images/ID3Tag2.png)
 
