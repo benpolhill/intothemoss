@@ -3,6 +3,12 @@ html, body {
     padding: 0;
     margin: 0;
 }
+nav {
+    text-align: center;
+}
+nav a {
+    padding: 0 1em;
+}
 body {
     background: url('./images/bg.jpg') #0c0d10 top center repeat;
     font-family: 'Open Sans', sans-serif;

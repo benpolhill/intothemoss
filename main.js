@@ -10,23 +10,23 @@ import xmlData from "./getData.js";
   let router = [
     {
       path: "/",
-      name: "Root",
+      title: "Home",
     },
     {
       path: "/about",
-      name: "About",
+      title: "About",
     },
     {
       path: "/contact",
-      name: "Contact",
+      title: "Contact",
     },
     {
       path: "/episodes/s01",
-      name: "Season 1",
+      title: "Season 1",
     },
     {
       path: "/episodes/s02",
-      name: "Season 2",
+      title: "Season 2",
     },
   ];
 
@@ -34,10 +34,7 @@ import xmlData from "./getData.js";
     {
       route: "/",
       title: "Home",
-      markup: `<p>
-      <a class='router-link' href='/home'>Welcome to the home page</a>
-      <p>Here are the latest episodes:</p>
-  </p>`,
+      markup: ``,
     },
     {
       route: "/about",
@@ -45,9 +42,8 @@ import xmlData from "./getData.js";
       markup: `
       <h2>A sunken raft of weeds woven into a verdant morass of sound, song and story</h2>
         <p>Broadcast on London's <a href="https://resonancefm.com">Resonance FM</a> every Thursday, <em>Into the Moss</em> is a 14 minute drift through original music, soundscapes and liminal yarns.</p>
-        <p><a href="https://smarturl.it/intothemoss">Subscribe to the podcast</a></p>
       <p>
-        Into the Moss is a weekly radio show made by James Baxter, James Ferris and James Polhill.
+        It is made by James Baxter, James Ferris and James Polhill.
       </p>`,
     },
     {
@@ -87,6 +83,7 @@ import xmlData from "./getData.js";
     route.title = title;
     route.path = path;
     view.route = path;
+    view.title = title;
     view.markup = `
       <h1>Episode ${id}: ${title}</h1>
       <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
@@ -159,6 +156,7 @@ import xmlData from "./getData.js";
       window.history.pushState({}, '', 'error');
       main.innerHTML = `This route is not defined`;
     } else {
+      console.log(view);
       window.history.pushState({}, '', routeInfo.path);
       pageTitle.innerHTML = `Into the Moss | ${view.title}`;
       main.innerHTML = view.markup;
