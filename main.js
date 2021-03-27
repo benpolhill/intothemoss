@@ -35,15 +35,20 @@ import xmlData from "./getData.js";
       route: "/",
       title: "Home",
       markup: `<p>
-      Welcome to the home page
+      <a class='router-link' href='/home'>Welcome to the home page</a>
+      <p>Here are the latest episodes:</p>
   </p>`,
     },
     {
       route: "/about",
       title: "About",
-      markup: `<p>
-      Into the Moss is a weekly radio show made by James Baxter, James Ferris and James Polhill.
-  </p>`,
+      markup: `
+      <h2>A sunken raft of weeds woven into a verdant morass of sound, song and story</h2>
+        <p>Broadcast on London's <a href="https://resonancefm.com">Resonance FM</a> every Thursday, <em>Into the Moss</em> is a 14 minute drift through original music, soundscapes and liminal yarns.</p>
+        <p><a href="https://smarturl.it/intothemoss">Subscribe to the podcast</a></p>
+      <p>
+        Into the Moss is a weekly radio show made by James Baxter, James Ferris and James Polhill.
+      </p>`,
     },
     {
       route: "/contact",
@@ -55,8 +60,11 @@ import xmlData from "./getData.js";
     {
       route: "/episodes/s01",
       title: "Season 1",
-      markup: `<ul>
-  </ul>`,
+      markup: `<h1>Season 1</h1>
+      <ul>
+        <li><a class='router-link' href='/episodes/s01/01'>Episode 1</a></li>
+        <li><a class='router-link' href='/episodes/s02/01'>Episode 2</a></li>
+      </ul>`,
     },
     {
       route: "/episodes/s02",
@@ -65,17 +73,96 @@ import xmlData from "./getData.js";
     },
   ];
 
+  // Add XML item data to router
   xmlItems.forEach((item, i) => {
     const id = xmlItems.length - i;
     const pad = (n, p = 2) => n.toString().padStart(p, "0");
-    let episode = {};
-    episode.id = pad(id);
-    episode.path = item.querySelector("link").innerHTML;
-    episode.title = item.querySelector("title").innerHTML;
-    episode.description = item.querySelector("description").innerHTML;
-    // Append each episode to the router
-    router = [...router, episode];
+    let route = {};
+    let view = {};
+    let link = item.querySelector("link").innerHTML;
+    let path = new URL(link).pathname;
+    let title = item.querySelector("title").innerHTML;
+    let description = item.querySelector("description").innerHTML;
+    route.id = pad(id);
+    route.title = title;
+    route.path = path;
+    view.route = path;
+    view.markup = `
+      <h1>Episode ${id}: ${title}</h1>
+      <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
+      <p>${description}</p>`
+    // Append each route to the router array
+    router = [...router, route];
+    // Append each view to the views array
+    views = [...views, view];
+    views[0].markup += `
+      <article>
+        <div class='thumb'>
+          <a class='router-link' href='${path}'><img src='/episodes/images/${pad(id,3)}.jpg'></a>
+        </div>
+        <div class='info'>
+          <h3><a class='router-link' href='${path}'>${id}: ${title}</a></h3>
+          <p>${description}</p>
+        </div>
+      </article>`; 
   });
   console.log(router);
+  console.log(views);
+
+  const main = document.getElementById('main');
+  const pageTitle = document.getElementsByTagName('title')[0];
+  let currentPath = window.location.pathname;
+  let view = views.filter(v => v.route === currentPath)[0];
+  if (currentPath === '/') {
+      main.innerHTML = view.markup;
+  } else {
+      // Check if route exists in routerInstance
+      let route = routerInstance.routes.filter(r => r.path === currentPath)[0];
+      console.log(`route on load: ${route}`);
+      if (route) {
+          main.innerHTML = view.markup;
+      } else {
+          main.innerHTML = `Route not defined`
+      }
+  }
+
+  let routeHistory = [];
+
+  window.onpopstate = () => {
+      // Back
+      let lastRoute = routeHistory.pop();
+      let navTo = routeHistory[routeHistory.length - 1] || '/';
+      navigate(navTo);
+      // Forward? who cares
+  }
+
+  document.addEventListener('click', (e)=> {
+    console.log(e.target);
+    // With thumbnail images, the clicked target will be the image, 
+    // so we have to specify to use the parent `a` link as the target
+    let target = e.target.classList.contains('router-link') ? e.target 
+      : e.target.parentNode.classList.contains('router-link') ? e.target.parentNode : null;
+    if (target) {
+      e.preventDefault();
+      navigate(target.pathname);
+      routeHistory = [...routeHistory, target.pathname]
+    }
+  })
+
+  function navigate(route) {
+    console.log(`navigating to ${route}`);
+    // Redirect to the router instance
+    let routeInfo = router.filter(r => r.path === route)[0];
+    let view = views.filter(v => v.route === route)[0];
+    // let definedRoutes = Array.from(document.getElementsByClassName('router-link'));
+    if (!routeInfo) {
+      window.history.pushState({}, '', 'error');
+      main.innerHTML = `This route is not defined`;
+    } else {
+      window.history.pushState({}, '', routeInfo.path);
+      pageTitle.innerHTML = `Into the Moss | ${view.title}`;
+      main.innerHTML = view.markup;
+    }
+  }
 
 })(); // Invoke the IIAF
