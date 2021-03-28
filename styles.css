@@ -12,6 +12,9 @@ nav a {
 a {
     text-decoration: none;
 }
+p a {
+    border-bottom: 1px dashed #455520;
+}
 body {
     background: url('./images/bg.jpg') #0c0d10 top center repeat;
     font-family: 'Open Sans', sans-serif;

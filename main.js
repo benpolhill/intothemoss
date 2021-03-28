@@ -1,5 +1,6 @@
 // Import parsed XML data as Promise
 import xmlData from "./getData.js";
+import links from "./links.js";
 
 // We need to wrap everything in an IIAF (immediately invoked async function)
 // in order to use the value from the resolved Promise
@@ -41,9 +42,9 @@ import xmlData from "./getData.js";
       title: "About",
       markup: `
       <h2>A sunken raft of weeds woven into a verdant morass of sound, song and story</h2>
-        <p>Broadcast on London's <a href="https://resonancefm.com">Resonance FM</a> every Thursday, <em>Into the Moss</em> is a 14 minute drift through original music, soundscapes and liminal yarns.</p>
-      <p>
-        It is made by James Baxter, James Ferris and James Polhill.
+        <p>Broadcast on London's <a href="https://resonancefm.com">Resonance 104.4 FM</a> every Thursday, <em>Into the Moss</em> is a 14 minute drift through original music, soundscapes and liminal yarns.</p>
+      <p>Also available via these reputable outlets:<br>
+        ${links.map((l) => '<a target="_blank" href="'+l.link+'">'+l.title+'</a>').join(' | ')}
       </p>`,
     },
     {
@@ -100,7 +101,7 @@ import xmlData from "./getData.js";
           <a class='router-link' href='${path}'><img src='/episodes/images/${pad(id,3)}.jpg'></a>
         </div>
         <div class='info'>
-          <h3><a class='router-link' href='${path}'>${id}: ${title}</a></h3>
+          <h2><a class='router-link' href='${path}'>${id}: ${title}</a></h2>
           <p>${description}</p>
         </div>
       </article>`; 
