@@ -103,18 +103,24 @@ import xmlData from "./getData.js";
         </div>
       </article>`; 
   });
-  console.log(router);
-  console.log(views);
+  // console.log(router);
+  // console.log(views);
+
+  document.onload = ()=> {
+    console.log("LOADED");
+  }
 
   const main = document.getElementById('main');
   const pageTitle = document.getElementsByTagName('title')[0];
   let currentPath = window.location.pathname;
+  console.log(currentPath);
   let view = views.filter(v => v.route === currentPath)[0];
+  console.log(view);
   if (currentPath === '/') {
       main.innerHTML = view.markup;
   } else {
       // Check if route exists in routerInstance
-      let route = routerInstance.routes.filter(r => r.path === currentPath)[0];
+      let route = router.filter(r => r.path === currentPath)[0];
       console.log(`route on load: ${route}`);
       if (route) {
           main.innerHTML = view.markup;
@@ -134,7 +140,7 @@ import xmlData from "./getData.js";
   }
 
   document.addEventListener('click', (e)=> {
-    console.log(e.target);
+    // console.log(e.target);
     // With thumbnail images, the clicked target will be the image, 
     // so we have to specify to use the parent `a` link as the target
     let target = e.target.classList.contains('router-link') ? e.target 
@@ -156,7 +162,7 @@ import xmlData from "./getData.js";
       window.history.pushState({}, '', 'error');
       main.innerHTML = `This route is not defined`;
     } else {
-      console.log(view);
+      // console.log(view);
       window.history.pushState({}, '', routeInfo.path);
       pageTitle.innerHTML = `Into the Moss | ${view.title}`;
       main.innerHTML = view.markup;
