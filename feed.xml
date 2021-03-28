@@ -20,8 +20,6 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
-<<<<<<< HEAD
-=======
             <itunes:episode>11</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Jar</title>
@@ -61,7 +59,6 @@
             <itunes:explicit>false</itunes:explicit>
         </item>
         <item>
->>>>>>> develop
             <itunes:episode>8</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Blam</title>
