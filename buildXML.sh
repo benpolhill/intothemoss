@@ -11,9 +11,7 @@ URL="https://intothemoss.co.uk"
 rm $F
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<rss version=\"2.0\"
-    xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"
-    xmlns:content=\"http://purl.org/rss/1.0/modules/content/\">
+<rss version=\"2.0\" xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\">
     <channel>
         <title>Into the Moss</title>
         <description>A sunken raft of weeds woven into a verdant morass of sound, song and story. Broadcast on London&apos;s Resonance FM every Thursday, Into the Moss is a 14 minute drift through original music, soundscapes and liminal yarns.</description>
@@ -26,7 +24,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
             <itunes:category text=\"Comedy Fiction\"/>
         </itunes:category>
         <link>$URL</link>
-        <copyright>&#169; Into the Moss 2020-2021</copyright>
+        <copyright>&#xA9; Into the Moss 2020-2021</copyright>
         <itunes:author>Into the Moss</itunes:author>
         <itunes:owner>
             <itunes:name>James Baxter, James Ferris, Ben Polhill</itunes:name>
@@ -46,8 +44,8 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
     released=`echo "$comment" | grep -Eo "[0-9]+\s[A-Z][a-z][a-z]\s[0-9]{4}"`
     echo "released: $released"
     desc=$(ffprobe -loglevel error -show_entries format_tags=TDES -of default=noprint_wrappers=1:nokey=1 $f)
-    # desc=$(sed "s/'/&apos;/g" $desc)
     desc=$(echo "${desc//\'/&apos;}")
+    desc=$(echo "${desc// & / &amp; }")
     album=$(ffprobe -loglevel error -show_entries format_tags=album -of default=noprint_wrappers=1:nokey=1 $f)
     season="${album: -1}"
     episode=$(ffprobe -loglevel error -show_entries format_tags=track -of default=noprint_wrappers=1:nokey=1 $f | sed 's|\(.*\)/.*|\1|')

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-    xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Into the Moss</title>
         <description>A sunken raft of weeds woven into a verdant morass of sound, song and story. Broadcast on London&apos;s Resonance FM every Thursday, Into the Moss is a 14 minute drift through original music, soundscapes and liminal yarns.</description>
@@ -14,7 +12,7 @@
             <itunes:category text="Comedy Fiction"/>
         </itunes:category>
         <link>https://intothemoss.co.uk</link>
-        <copyright>&#169; Into the Moss 2020-2021</copyright>
+        <copyright>&#xA9; Into the Moss 2020-2021</copyright>
         <itunes:author>Into the Moss</itunes:author>
         <itunes:owner>
             <itunes:name>James Baxter, James Ferris, Ben Polhill</itunes:name>
@@ -22,6 +20,48 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+<<<<<<< HEAD
+=======
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Jar</title>
+            <description>What flies circle this tempting treat, shedding their inventory in the poem of empty vessels?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/026.mp3" length="14641632" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/11</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/026.jpg"/>
+            <guid>itm20210325</guid>
+            <pubDate>Thu, 25 Mar 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Gland</title>
+            <description>Bread &amp; butter, rice &amp; potato, lump &amp; leg: conclude your slop around Peppin&apos;s Fair.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/025.mp3" length="13617216" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/025.jpg"/>
+            <guid>itm20210318</guid>
+            <pubDate>Thu, 18 Mar 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.75</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>9</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Bolt</title>
+            <description>Roll up for the Grabbits, and the Lump and the Leg, here consuming or consumed.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/024.mp3" length="13779444" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/09</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/024.jpg"/>
+            <guid>itm20210311</guid>
+            <pubDate>Thu, 11 Mar 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.59</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+>>>>>>> develop
             <itunes:episode>8</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Blam</title>
