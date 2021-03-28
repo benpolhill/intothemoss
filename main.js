@@ -1,6 +1,7 @@
 // Import parsed XML data as Promise
 import xmlData from "./getData.js";
-import links from "./links.js";
+import Router from "./router.js";
+import Views from "./views.js";
 
 // We need to wrap everything in an IIAF (immediately invoked async function)
 // in order to use the value from the resolved Promise
@@ -8,69 +9,10 @@ import links from "./links.js";
   const xmlDoc = await Promise.resolve(xmlData);
   const xmlItems = xmlDoc.querySelectorAll("item");
 
-  let router = [
-    {
-      path: "/",
-      title: "Home",
-    },
-    {
-      path: "/about",
-      title: "About",
-    },
-    {
-      path: "/contact",
-      title: "Contact",
-    },
-    {
-      path: "/episodes/s01",
-      title: "Season 1",
-    },
-    {
-      path: "/episodes/s02",
-      title: "Season 2",
-    },
-  ];
+  let views = new Views;
+  let router = new Router;
 
-  let views = [
-    {
-      route: "/",
-      title: "Home",
-      markup: ``,
-    },
-    {
-      route: "/about",
-      title: "About",
-      markup: `
-      <h2>A sunken raft of weeds woven into a verdant morass of sound, song and story</h2>
-        <p>Broadcast on London's <a href="https://resonancefm.com">Resonance 104.4 FM</a> every Thursday, <em>Into the Moss</em> is a 14 minute drift through original music, soundscapes and liminal yarns.</p>
-      <h3><em>Into the Moss</em> is also available via these reputable outlets:</h3><p>
-        ${links.map((l) => '<a target="_blank" href="'+l.link+'">'+l.title+'</a>').join(' | ')}
-      </p>`,
-    },
-    {
-      route: "/contact",
-      title: "Contact",
-      markup: `<p>
-      Please email us on intothemossradio[at]gmail.com. Thanks.
-  </p>`,
-    },
-    {
-      route: "/episodes/s01",
-      title: "Season 1",
-      markup: `<h1>Season 1</h1>
-      <ul>
-        <li><a class='router-link' href='/episodes/s01/01'>Episode 1</a></li>
-        <li><a class='router-link' href='/episodes/s02/01'>Episode 2</a></li>
-      </ul>`,
-    },
-    {
-      route: "/episodes/s02",
-      title: "Season 2",
-      markup: `<h1>Season 2</h1>`,
-    },
-  ];
-
-  // Add XML item data to router
+  // Add XML item data to each view & route
   xmlItems.forEach((item, i) => {
     const id = xmlItems.length - i;
     const pad = (n, p = 2) => n.toString().padStart(p, "0");
@@ -106,19 +48,12 @@ import links from "./links.js";
         </div>
       </article>`; 
   });
-  // console.log(router);
-  // console.log(views);
-
-  // document.onload = ()=> {
-  //   console.log("LOADED");
-  // }
 
   const main = document.getElementById('main');
   const pageTitle = document.getElementsByTagName('title')[0];
   let currentPath = window.location.pathname;
   console.log(currentPath);
   let view = views.filter(v => v.route === currentPath)[0];
-  // console.log(view);
   if (currentPath === '/') {
       main.innerHTML = view.markup;
   } else {
@@ -128,8 +63,7 @@ import links from "./links.js";
       if (route) {
           main.innerHTML = view.markup;
       } else {
-          // main.innerHTML = `Route not defined`
-          main.innerHTML = views[0].markup // Default to home
+          main.innerHTML = views[0].markup // Default to home if no route defined
       }
   }
 
@@ -166,7 +100,6 @@ import links from "./links.js";
       window.history.pushState({}, '', 'error');
       main.innerHTML = `This route is not defined`;
     } else {
-      // console.log(view);
       window.history.pushState({}, '', routeInfo.path);
       pageTitle.innerHTML = `Into the Moss | ${view.title}`;
       main.innerHTML = view.markup;
