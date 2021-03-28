@@ -43,7 +43,7 @@ import links from "./links.js";
       markup: `
       <h2>A sunken raft of weeds woven into a verdant morass of sound, song and story</h2>
         <p>Broadcast on London's <a href="https://resonancefm.com">Resonance 104.4 FM</a> every Thursday, <em>Into the Moss</em> is a 14 minute drift through original music, soundscapes and liminal yarns.</p>
-      <p>Also available via these reputable outlets:<br>
+      <h3><em>Into the Moss</em> is also available via these reputable outlets:</h3><p>
         ${links.map((l) => '<a target="_blank" href="'+l.link+'">'+l.title+'</a>').join(' | ')}
       </p>`,
     },
