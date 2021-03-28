@@ -28,7 +28,7 @@ import Views from "./views.js";
     view.route = path;
     view.title = title;
     view.markup = `
-      <h1>Episode ${id}: ${title}</h1>
+      <h1>${id}: ${title}</h1>
       <div id='episode-player'>
         <div class='thumb'><img src='/episodes/images/${pad(id,3)}.jpg'></div>
         <div id='player-info'>
@@ -36,7 +36,7 @@ import Views from "./views.js";
           <p>${description}</p>
         </div>
       </div>
-      <p><a class='router-link' href='/'>&larr; back to episodes</a></p>`
+      <p><a class='router-link' href='/'>&larr; Back to episodes</a></p>`
     // Append each route to the router array
     router = [...router, route];
     // Append each view to the views array
