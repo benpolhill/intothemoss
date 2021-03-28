@@ -29,8 +29,13 @@ import Views from "./views.js";
     view.title = title;
     view.markup = `
       <h1>Episode ${id}: ${title}</h1>
-      <div id='episode-player'><img src='/episodes/images/${pad(id,3)}.jpg'><div><audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
-      <p>${description}</p></div></div>
+      <div id='episode-player'>
+        <div class='thumb'><img src='/episodes/images/${pad(id,3)}.jpg'></div>
+        <div id='player-info'>
+          <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
+          <p>${description}</p>
+        </div>
+      </div>
       <p><a class='router-link' href='/'>&larr; back to episodes</a></p>`
     // Append each route to the router array
     router = [...router, route];

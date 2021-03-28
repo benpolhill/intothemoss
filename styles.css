@@ -53,6 +53,10 @@ article .thumb {
     flex: 0 0 auto;
     padding: 1rem 1rem 1rem 0;
 }
+#episode-player .thumb {
+    width: 200px;
+    margin: 0 1.5rem 1.5rem 0;
+}
 .thumb img {
     width: 100%;
 }
@@ -75,11 +79,7 @@ article .info {
     display: flex;
     flex-wrap: wrap;
 }
-#episode-player img {
-    width: 200px;
-    margin-right: 1.5rem;
-}
-#episode-player div {
+#episode-player #player-info {
     display: flex;
     flex: 1 0 40%;
     flex-direction: column;
