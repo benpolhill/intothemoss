@@ -1,2 +1,2 @@
-Disallow /dev/
-Disallow /videos/
+Disallow /
+#Disallow /videos/
