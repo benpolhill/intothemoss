@@ -86,12 +86,14 @@ import xmlData from "./getData.js";
     view.title = title;
     view.markup = `
       <h1>Episode ${id}: ${title}</h1>
-      <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
-      <p>${description}</p>`
+      <div id='episode-player'><img src='/episodes/images/${pad(id,3)}.jpg'><div><audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
+      <p>${description}</p></div></div>
+      <p><a class='router-link' href='/'>&larr; back to episodes</a></p>`
     // Append each route to the router array
     router = [...router, route];
     // Append each view to the views array
     views = [...views, view];
+    // Build the home page list of episodes
     views[0].markup += `
       <article>
         <div class='thumb'>
@@ -106,16 +108,16 @@ import xmlData from "./getData.js";
   // console.log(router);
   // console.log(views);
 
-  document.onload = ()=> {
-    console.log("LOADED");
-  }
+  // document.onload = ()=> {
+  //   console.log("LOADED");
+  // }
 
   const main = document.getElementById('main');
   const pageTitle = document.getElementsByTagName('title')[0];
   let currentPath = window.location.pathname;
   console.log(currentPath);
   let view = views.filter(v => v.route === currentPath)[0];
-  console.log(view);
+  // console.log(view);
   if (currentPath === '/') {
       main.innerHTML = view.markup;
   } else {
@@ -125,7 +127,8 @@ import xmlData from "./getData.js";
       if (route) {
           main.innerHTML = view.markup;
       } else {
-          main.innerHTML = `Route not defined`
+          // main.innerHTML = `Route not defined`
+          main.innerHTML = views[0].markup // Default to home
       }
   }
 

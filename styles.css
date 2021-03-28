@@ -9,6 +9,9 @@ nav {
 nav a {
     padding: 0 1em;
 }
+a {
+    text-decoration: none;
+}
 body {
     background: url('./images/bg.jpg') #0c0d10 top center repeat;
     font-family: 'Open Sans', sans-serif;
@@ -64,6 +67,19 @@ article .info {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+#episode-player {
+    display: flex;
+    flex-wrap: wrap;
+}
+#episode-player img {
+    width: 200px;
+    margin-right: 1.5rem;
+}
+#episode-player div {
+    display: flex;
+    flex: 1 0 40%;
+    flex-direction: column;
 }
 #into, #moss {
     height: 150px;
