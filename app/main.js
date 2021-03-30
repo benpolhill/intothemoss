@@ -95,14 +95,21 @@ import Views from "./views.js";
       navigate(navTo);
       // Forward? who cares
   }
-
+  // TODO: rewrite all this as switch block?
   document.addEventListener('click', (e)=> {
-    // console.log(e.target);
+    console.log(e.target);
     // With thumbnail images, the clicked target will be the image, 
     // so we have to specify to use the parent `a` link as the target
     let target = e.target.classList.contains('router-link') ? e.target 
-      : e.target.parentNode.classList.contains('router-link') ? e.target.parentNode : null;
+      : e.target.parentNode.classList.contains('router-link') ? e.target.parentNode
+      : e.target.classList.contains('expander') ? e.target : null;
     if (target) {
+      if (target.classList.contains('expander')) {
+        e.preventDefault;
+        console.log('pressing thex');
+        document.querySelector('.episode-text').style.display = 'block';
+        return;
+      }
       e.preventDefault();
       navigate(target.pathname);
       routeHistory = [...routeHistory, target.pathname]
