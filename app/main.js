@@ -47,6 +47,10 @@ import Views from "./views.js";
       fetch(textPath)
       .then(response => response.text())
       .then((epText) => {
+        if (epText.startsWith("<")) {
+          console.log('returning!');
+          return;
+        }
       view.markup += `<pre class='episode-text'>${epText}</pre>`;
       })
     
@@ -105,9 +109,14 @@ import Views from "./views.js";
       : e.target.classList.contains('expander') ? e.target : null;
     if (target) {
       if (target.classList.contains('expander')) {
-        e.preventDefault;
-        console.log('pressing thex');
-        document.querySelector('.episode-text').style.display = 'block';
+        try {
+          e.preventDefault;
+          console.log('pressing thex');
+          document.querySelector('.episode-text').style.display = 'block';
+          return;
+        } catch(e) {
+          return;
+        }
         return;
       }
       e.preventDefault();
