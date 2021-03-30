@@ -2,12 +2,15 @@
 import xmlData from "./getData.js";
 import Router from "./router.js";
 import Views from "./views.js";
+// import text from "./getText.js";
 
 // We need to wrap everything in an IIAF (immediately invoked async function)
 // in order to use the value from the resolved Promise
 (async function () {
   const xmlDoc = await Promise.resolve(xmlData);
   const xmlItems = xmlDoc.querySelectorAll("item");
+  // const texts = await Promise.resolve(text);
+  // console.log(`text: ${texts}`);
 
   let views = new Views;
   let router = new Router;
@@ -22,11 +25,14 @@ import Views from "./views.js";
     let path = new URL(link).pathname;
     let title = item.querySelector("title").innerHTML;
     let description = item.querySelector("description").innerHTML;
+    let textPath = `/episodes/text/${pad(id,3)}.txt`;
+    // const texty = await Promise.resolve(text);
     route.id = pad(id);
     route.title = title;
     route.path = path;
     view.route = path;
     view.title = title;
+    
     view.markup = `
       <h1>${id}: ${title}</h1>
       <div id='episode-player'>
@@ -36,7 +42,15 @@ import Views from "./views.js";
           <p>${description}</p>
         </div>
       </div>
-      <p><a class='router-link' href='/'>&larr; Back to episodes</a></p>`
+      <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander'>Episode text &darr;</a></p>`;
+
+      fetch(textPath)
+      .then(response => response.text())
+      .then((epText) => {
+      view.markup += `<pre class='episode-text'>${epText}</pre>`;
+      })
+    
+      
     // Append each route to the router array
     router = [...router, route];
     // Append each view to the views array

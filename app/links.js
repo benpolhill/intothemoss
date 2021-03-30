@@ -1,5 +1,9 @@
 const links = [
   {
+    title: "Bandcamp",
+    link: "https://intothemoss.bandcamp.com/",
+  },
+  {
     title: "Google Podcasts",
     link:
       "https://podcasts.google.com/?feed=aHR0cHM6Ly9pbnRvdGhlbW9zcy5jby51ay9mZWVkLnhtbA",

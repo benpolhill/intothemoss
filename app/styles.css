@@ -84,6 +84,9 @@ article .info {
     flex: 1 0 40%;
     flex-direction: column;
 }
+.episode-text {
+    white-space: pre-wrap;
+}
 #into, #moss {
     height: 150px;
 }
