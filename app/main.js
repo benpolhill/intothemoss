@@ -99,9 +99,8 @@ import Views from "./views.js";
       navigate(navTo);
       // Forward? who cares
   }
-  // TODO: rewrite all this as switch block?
+  // TODO: rewrite all this as switch block for each type of click target
   document.addEventListener('click', (e)=> {
-    console.log(e.target);
     // With thumbnail images, the clicked target will be the image, 
     // so we have to specify to use the parent `a` link as the target
     let target = e.target.classList.contains('router-link') ? e.target 
@@ -111,7 +110,6 @@ import Views from "./views.js";
       if (target.classList.contains('expander')) {
         try {
           e.preventDefault;
-          console.log('pressing thex');
           document.querySelector('.episode-text').style.display = 'block';
           return;
         } catch(e) {
@@ -126,7 +124,6 @@ import Views from "./views.js";
   })
 
   function navigate(route) {
-    console.log(`navigating to ${route}`);
     // Redirect to the router instance
     let routeInfo = router.filter(r => r.path === route)[0];
     let view = views.filter(v => v.route === route)[0];
