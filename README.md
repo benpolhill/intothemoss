@@ -22,8 +22,8 @@ Use the [ID3 Editor](http://www.pa-software.com/id3editor/) and ensure the follo
 - Description (in Podcast tab)
 
 Other fields (like image) may be filled, but are not essential for the feed build. See screenshots below for what to fill in.
-![ID3 fields 1](images/ID3Tag1.png)
-![ID3 fields 2](images/ID3Tag2.png)
+![ID3 fields 1](app/images/ID3Tag1.png)
+![ID3 fields 2](app/images/ID3Tag2.png)
 ### 4. Create RSS feed file
 
 The podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.co.uk/feed.xml](https://intothemoss.co.uk/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
