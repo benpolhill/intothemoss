@@ -20,11 +20,24 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Maracas</title>
+            <description>A survivalist makes some internal adjustments. Partners in crime call it a day.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/028.mp3" length="13687460" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/13</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/028.jpg"/>
+            <guid>itm20210408</guid>
+            <pubDate>Thu, 08 Apr 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.70</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>12</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Tuna</title>
             <description>A tap on the cubicle door heralds a problem of greater girth than that of maimed apples or a cartoon grocery threat.</description>
-            <enclosure url="https://intothemoss.co.uk/episodes/audio/027.mp3" length="14668632" type="audio/mpeg" />
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/027.mp3" length="14690776" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s02/12</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/027.jpg"/>
             <guid>itm20210401</guid>
