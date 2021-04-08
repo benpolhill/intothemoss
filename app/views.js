@@ -1,4 +1,4 @@
-import links from "./links.js";
+import links from "/app/links.js";
 
 let Views = function() { 
     return [
@@ -25,12 +25,12 @@ let Views = function() {
   </p>`,
     },
     {
-      route: "/episodes/s01",
-      title: "Season 1",
-      markup: `<h1>Season 1</h1>
+      route: "/episodes",
+      title: "Episodes",
+      markup: `<h1>Episodes</h1>
       <ul>
-        <li><a class='router-link' href='/episodes/s01/01'>Episode 1</a></li>
-        <li><a class='router-link' href='/episodes/s02/01'>Episode 2</a></li>
+        <li><a class='router-link' href='/episodes/s01'>Season 1</a></li>
+        <li><a class='router-link' href='/episodes/s02'>Season 2</a></li>
       </ul>`,
     },
     {

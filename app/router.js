@@ -13,11 +13,11 @@ let Router = function() {
       title: "Contact",
     },
     {
-      path: "/episodes/s01",
-      title: "Season 1",
+      path: "/episodes",
+      title: "Episodes",
     },
     {
-      path: "/episodes/s02",
+      path: "/episodes/s02/01",
       title: "Season 2",
     },
   ];

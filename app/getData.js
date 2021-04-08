@@ -1,6 +1,6 @@
 async function getData() {
 
-    const feed = await fetch(`./feed.xml`);
+    const feed = await fetch(`/feed.xml`);
     const rss = await feed.text();
 
     return rss;

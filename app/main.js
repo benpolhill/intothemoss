@@ -1,7 +1,7 @@
 // Import parsed XML data as Promise
-import xmlData from "./getData.js";
-import Router from "./router.js";
-import Views from "./views.js";
+import xmlData from "/app/getData.js";
+import Router from "/app/router.js";
+import Views from "/app/views.js";
 // import text from "./getText.js";
 
 // We need to wrap everything in an IIAF (immediately invoked async function)
@@ -71,6 +71,8 @@ import Views from "./views.js";
         </div>
       </article>`; 
   });
+  console.log(router);
+  console.log(views);
 
   const main = document.getElementById('main');
   const pageTitle = document.getElementsByTagName('title')[0];
@@ -83,6 +85,7 @@ import Views from "./views.js";
       // Check if route exists in routerInstance
       let route = router.filter(r => r.path === currentPath)[0];
       console.log(`route on load: ${route}`);
+      console.log(route);
       if (route) {
           main.innerHTML = view.markup;
       } else {
