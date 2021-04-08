@@ -17,7 +17,11 @@ let Router = function() {
       title: "Episodes",
     },
     {
-      path: "/episodes/s02/01",
+      path: "/episodes/s01",
+      title: "Season 1",
+    },
+    {
+      path: "/episodes/s02",
       title: "Season 2",
     },
   ];
