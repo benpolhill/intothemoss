@@ -41,3 +41,10 @@ The `main` branch of the repository is pulled by the intothemoss.co.uk host serv
 ```bash
 30 18 * * 4 su -s /bin/sh root -c 'cd /var/www/html/intothemoss.co.uk/ && /usr/bin/git pull origin main'
 ```
+
+## Local Dropbox integration
+All files in my local repo: `/episodes/[audio|images|text]` are synced from the files in `Dropbox/Into the Moss/Website/` via an `fswatch` command in `~/Library/Scripts/startup.sh`:
+```bash
+fswatch /Users/ben_polhill/Dropbox/Into\ the\ Moss/Website/ | (while read x; do echo $x | rsync -av --delete /Users/ben_polhill/Dropbox/Into\ the\ Moss/Website/ /Users/ben_polhill/Development/intothemoss/episodes; done)
+```
+This means anyone with access to the Dropbox folder can just save files in the relevent places in `/Website` and not have to worry about all the Git shenanigens.
