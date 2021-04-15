@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>14</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Palace</title>
+            <description>On a train-ride through the nervous system, packed among badges, badgers and bandages, Mrs Blandings sits aimlessly astride a listless chestnut mare.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/029.mp3" length="13029106" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/14</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/029.jpg"/>
+            <guid>itm20210414</guid>
+            <pubDate>Thu, 15 Apr 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.86</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>13</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Maracas</title>
