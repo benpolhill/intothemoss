@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>15</itunes:episode>
+            <itunes:season>2</itunes:season>
+            <title>Alfalfa</title>
+            <description>Rumination 30: Meat is muddier on the grassier climbs, yet climbing is cruddier to the meatier minds.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/030.mp3" length="12997181" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s02/15</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/030.jpg"/>
+            <guid>itm20210422</guid>
+            <pubDate>Thu, 22 Apr 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.23</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>14</itunes:episode>
             <itunes:season>2</itunes:season>
             <title>Palace</title>
