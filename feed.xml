@@ -20,11 +20,24 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Evolution</title>
+            <description>When a fall guy fronts it&apos;s not long before an affront is felt. Duplicity dials but who will answer?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/032.mp3" length="11277287" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/02</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/032.jpg"/>
+            <guid>itm20210506</guid>
+            <pubDate>Thu, 06 May 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>1</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Genesis</title>
             <description>Bon mots, or not, garbled from the gables. What fool would rise to meet the demands of Fantoft?</description>
-            <enclosure url="https://intothemoss.co.uk/episodes/audio/031.mp3" length="11206650" type="audio/mpeg" />
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/031.mp3" length="11206906" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s03/01</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/031.jpg"/>
             <guid>itm20210429</guid>
