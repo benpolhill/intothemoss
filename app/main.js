@@ -26,6 +26,8 @@ import Views from "/app/views.js";
     let title = item.querySelector("title").innerHTML;
     let description = item.querySelector("description").innerHTML;
     let textPath = `/episodes/text/${pad(id,3)}.txt`;
+    let pubDate = item.querySelector("pubDate").innerHTML;
+    pubDate = pubDate.substring(5, 16);
     // const texty = await Promise.resolve(text);
     route.id = pad(id);
     route.title = title;
@@ -40,6 +42,7 @@ import Views from "/app/views.js";
         <div id='player-info'>
           <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
           <p>${description}</p>
+          <p>First broadcast on <a href="https://resonancefm.com" target="_blank">Resonance 104.4 FM</a>,  ${pubDate}.</p>
         </div>
       </div>
       <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander'>Episode text &darr;</a></p>`;
