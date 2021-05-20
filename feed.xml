@@ -20,12 +20,12 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
-            <itunes:episode></itunes:episode>
+            <itunes:episode>4</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Revelation</title>
             <description>Rousseau and Marengo Part 3: The way the gravy trickles at the feast of fools cannot swamp the fact that OTIS sets the rules.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/034.mp3" length="11303962" type="audio/mpeg" />
-            <link>https://intothemoss.co.uk/episodes/s03/00</link>
+            <link>https://intothemoss.co.uk/episodes/s03/04</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/034.jpg"/>
             <guid>itm20210520</guid>
             <pubDate>Thu, 20 May 2021 18:30:00 +0000</pubDate>
