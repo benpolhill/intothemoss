@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>8</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Humming</title>
+            <description>Masked as a rat infestation at Fitson&apos;s, a perpetual loop streams sideways, sifting through sands and punching brains, only to bear cheese-witness to Miriam&apos;s sludgy tortoise pipe-dream.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/038.mp3" length="12853549" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/08</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/038.jpg"/>
+            <guid>itm20210617</guid>
+            <pubDate>Thu, 17 Jun 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.99</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>7</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Caesar</title>
