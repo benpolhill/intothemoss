@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Jokers</title>
+            <description>Mr Kit Eraser was never going to be a superman, whatever promises coated his slick tongue on the trip to watch Mr Porky talking to his pies again.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/040.mp3" length="12812596" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/040.jpg"/>
+            <guid>itm20210701</guid>
+            <pubDate>Thu, 01 Jul 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.49</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>9</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Prosthetic</title>
