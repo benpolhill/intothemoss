@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Appraisal</title>
+            <description>Sliding or surfing, mutt or intern, riding clouds of sound; it’s appraisal time!</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/041.mp3" length="10934256" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/11</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/041.jpg"/>
+            <guid>itm20210708</guid>
+            <pubDate>Thu, 08 Jul 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.10</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>10</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Jokers</title>
