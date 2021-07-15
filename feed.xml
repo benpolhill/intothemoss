@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Bristles</title>
+            <description>From the doghouse to the bookhouse, leads are followed to the listening booth where some light may be shed on the mysterious Flamma Simia.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/042.mp3" length="12599367" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/12</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/042.jpg"/>
+            <guid>itm20210715</guid>
+            <pubDate>Thu, 15 Jul 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.10</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>11</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Appraisal</title>
