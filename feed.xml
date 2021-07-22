@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Dinner</title>
+            <description>Horse in hand under an eggless sky, stormy rags drown in buckets within the dry spoon’s eye.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/043.mp3" length="13520098" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/13</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/043.jpg"/>
+            <guid>itm20210722</guid>
+            <pubDate>Thu, 22 Jul 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.99</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>12</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Bristles</title>
