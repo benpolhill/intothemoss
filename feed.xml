@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>14</itunes:episode>
+            <itunes:season>3</itunes:season>
+            <title>Letter</title>
+            <description>Trawling the past for escape routes in the doubled vision of the peripheral mirrored cabinet - who’s the toy in all this?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/044.mp3" length="12544887" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s03/14</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/044.jpg"/>
+            <guid>itm20210729</guid>
+            <pubDate>Thu, 29 Jul 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>13</itunes:episode>
             <itunes:season>3</itunes:season>
             <title>Dinner</title>
