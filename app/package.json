@@ -1,0 +1,23 @@
+{
+  "name": "intothemoss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@sentry/browser": "^6.13.2",
+    "@sentry/tracing": "^6.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benpolhill/intothemoss.git"
+  },
+  "author": "Ben Polhill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benpolhill/intothemoss/issues"
+  },
+  "homepage": "https://github.com/benpolhill/intothemoss#readme"
+}
