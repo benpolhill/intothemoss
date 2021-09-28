@@ -1,8 +1,22 @@
+import * as Sentry from "@sentry/browser";
+import { Integrations } from "@sentry/tracing";
 // Import parsed XML data as Promise
 import xmlData from "/app/getData.js";
 import Router from "/app/router.js";
 import Views from "/app/views.js";
 // import text from "./getText.js";
+
+Sentry.init({
+  dsn: "https://2ca06d8c9b384f148a022076bf2b12d7@o1017332.ingest.sentry.io/5983111",
+  integrations: [new Integrations.BrowserTracing()],
+
+  // Set tracesSampleRate to 1.0 to capture 100%
+  // of transactions for performance monitoring.
+  // We recommend adjusting this value in production
+  tracesSampleRate: 1.0,
+});
+
+myUndefinedFunction();
 
 // We need to wrap everything in an IIAF (immediately invoked async function)
 // in order to use the value from the resolved Promise
