@@ -16,8 +16,6 @@ Sentry.init({
   tracesSampleRate: 1.0,
 });
 
-myUndefinedFunction();
-
 // We need to wrap everything in an IIAF (immediately invoked async function)
 // in order to use the value from the resolved Promise
 (async function () {
