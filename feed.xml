@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>4</itunes:season>
+            <title>Company</title>
+            <description>Scratched in the bedrock, the tuppence of perception takes vertical tea</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/049.mp3" length="12614236" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s04/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/049.jpg"/>
+            <guid>itm20211007</guid>
+            <pubDate>Thu, 07 Oct 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>4</itunes:episode>
             <itunes:season>4</itunes:season>
             <title>Toed</title>
