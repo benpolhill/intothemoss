@@ -20,6 +20,7 @@ body {
     background: url('./images/bg.jpg') #0c0d10 top center repeat fixed;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    height: 100vw;
 }
 body, a {
     color: #667d33;
