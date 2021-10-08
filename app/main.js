@@ -52,7 +52,7 @@ Sentry.init({
       <div id='episode-player'>
         <div class='thumb'>
           <picture>
-            <source srcset='/episodes/images/${pad(id,3)}.webp' type='image/webp'>
+            <source srcset='/episodes/images/webp/${pad(id,3)}.webp' type='image/webp'>
             <source srcset='/episodes/images/${pad(id,3)}.jpg' type='image/jpeg'>
             <img src='/episodes/images/${pad(id,3)}.jpg' loading='lazy'>
           </picture>
