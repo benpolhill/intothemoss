@@ -51,6 +51,7 @@ article {
 }
 article .thumb {
     width: 150px;
+    height: 150px;
     flex: 0 0 auto;
     padding: 1rem 1rem 1rem 0;
 }

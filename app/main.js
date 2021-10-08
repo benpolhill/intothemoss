@@ -50,7 +50,13 @@ Sentry.init({
     view.markup = `
       <h1>${id}: ${title}</h1>
       <div id='episode-player'>
-        <div class='thumb'><img src='/episodes/images/${pad(id,3)}.jpg' loading='lazy'></div>
+        <div class='thumb'>
+          <picture>
+            <source srcset='/episodes/images/${pad(id,3)}.webp' type='image/webp'>
+            <source srcset='/episodes/images/${pad(id,3)}.jpg' type='image/jpeg'>
+            <img src='/episodes/images/${pad(id,3)}.jpg' loading='lazy'>
+          </picture>
+        </div>
         <div id='player-info'>
           <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
           <p>${description}</p>
