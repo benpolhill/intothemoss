@@ -59,7 +59,7 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
             <description>$desc</description>
             <enclosure url=\"$URL/episodes/audio/$file\" length=\"$size\" type=\"audio/mpeg\" />
             <link>$URL/episodes/s$seasonpad/$episodepad</link>
-            <itunes:image href=\"$URL/episodes/images/$index.jpg\"/>
+            <itunes:image href=\"$URL/episodes/images/jpg/1400/$index.jpg\"/>
             <guid>$guid</guid>
             <pubDate>Thu, $released 18:30:00 +0000</pubDate>
             <itunes:duration>$duration</itunes:duration>
