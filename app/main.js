@@ -55,7 +55,6 @@ Sentry.init({
             <source srcset='/episodes/images/avif/300/${pad(id,3)}.avif' type='image/avif'>
             <source srcset='/episodes/images/webp/300/${pad(id,3)}.webp' type='image/webp'>
             <img src='/episodes/images/jpg/300/${pad(id,3)}.jpg' loading='lazy'>
-            <!--<img src='https://ik.imagekit.io/moss/images/tr:w-300/${pad(id,3)}.jpg' loading='lazy'>-->
           </picture>
         </div>
         <div id='player-info'>
