@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>4</itunes:season>
+            <title>Knotted</title>
+            <description>His face a wafer, fossilised into a trench, like a cataract</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/051.mp3" length="13972860" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s04/07</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/051.jpg"/>
+            <guid>itm20211021</guid>
+            <pubDate>Thu, 21 Oct 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>4</itunes:season>
             <title>Candles</title>
