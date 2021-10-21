@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ROOT_DIR=`pwd`
+EP_ID=$1
+if [ -z "$1" ]; then
+    echo "Episode number? [0xx]:"
+    read EP_ID
+fi
+
+sh buildXML.sh
+cd episodes/images
+cwebp -resize 1000 1000 -q 50 jpg/1400/$EP_ID.jpg -o webp/1000/$EP_ID.webp
+cwebp -resize 150 150 -q 50 jpg/1400/$EP_ID.jpg -o webp/150/$EP_ID.webp
+cwebp -resize 300 300 -q 50 jpg/1400/$EP_ID.jpg -o webp/300/$EP_ID.webp
+convert jpg/1400/$EP_ID.jpg -resize 300x300 -quality 60 jpg/300/$EP_ID.jpg
+convert jpg/1400/$EP_ID.jpg -resize 300x300 -quality 60 jpg/150/$EP_ID.jpg
+cd $ROOT_DIR
+npm run build
+git add .
+git commit -m "Add ep $EP_ID"
+git push
+
