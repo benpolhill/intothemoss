@@ -20,12 +20,27 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>4</itunes:season>
+            <title>Eastward</title>
+            <description>Lord Hulch can&apos;t moon us 
+from the steel safety platform;
+His coat is too long.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/054.mp3" length="10298690" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s04/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/054.jpg"/>
+            <guid>itm20211111</guid>
+            <pubDate>Thu, 11 Nov 2021 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>9</itunes:episode>
-            <itunes:season>2</itunes:season>
+            <itunes:season>4</itunes:season>
             <title>Scalpel</title>
             <description>Ghouls in the theatre boil kraken tendrils in soup. Spotlit by Johnny.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/053.mp3" length="12128276" type="audio/mpeg" />
-            <link>https://intothemoss.co.uk/episodes/s02/09</link>
+            <link>https://intothemoss.co.uk/episodes/s04/09</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/053.jpg"/>
             <guid>itm20210411</guid>
             <pubDate>Thu, 04 Nov 2021 18:30:00 +0000</pubDate>
