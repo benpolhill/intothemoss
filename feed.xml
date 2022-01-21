@@ -20,13 +20,13 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
-            <itunes:episode></itunes:episode>
+            <itunes:episode>3</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Leafing</title>
             <description>Greased by underlings, his head rests under the rock
 of experience.</description>
-            <enclosure url="https://intothemoss.co.uk/episodes/audio/062.mp3" length="13404741" type="audio/mpeg" />
-            <link>https://intothemoss.co.uk/episodes/s05/00</link>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/062.mp3" length="13367109" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/03</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/062.jpg"/>
             <guid>itm20220120</guid>
             <pubDate>Thu, 20 Jan 2022 18:30:00 +0000</pubDate>
