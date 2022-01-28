@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>4</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Fluoro</title>
+            <description>In the spasms of the unrolling god-tongue, he seethes incandescent.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/063.mp3" length="13021426" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/04</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/063.jpg"/>
+            <guid>itm20220127</guid>
+            <pubDate>Thu, 27 Jan 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Leafing</title>
