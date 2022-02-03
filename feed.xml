@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Birthday</title>
+            <description>It’s ceiling salad, down in Loftie’s basement barn. Hear the igloos bray.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/064.mp3" length="13882062" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/064.jpg"/>
+            <guid>itm20220203</guid>
+            <pubDate>Thu, 03 Feb 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>4</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Fluoro</title>
