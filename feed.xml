@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Chamber</title>
+            <description>Mr Puppy Pants, all hot air and blue water. A vole clots the mind.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/065.mp3" length="13876892" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/06</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/065.jpg"/>
+            <guid>itm20220210</guid>
+            <pubDate>Thu, 10 Feb 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Birthday</title>
