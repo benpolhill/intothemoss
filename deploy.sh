@@ -17,6 +17,6 @@ convert jpg/1400/$EP_ID.jpg -resize 300x300 -quality 60 jpg/150/$EP_ID.jpg
 cd $ROOT_DIR
 npm run build
 git add .
-git commit -m "Add ep $EP_ID"
+git commit -m "deploy-dev $EP_ID"
 git push
 
