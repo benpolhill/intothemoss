@@ -20,10 +20,23 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>8</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Spooning</title>
+            <description>Velociraptor, spooning the life that’s ebbing. Things come together.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/067.mp3" length="12225587" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/08</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/067.jpg"/>
+            <guid>itm20220224</guid>
+            <pubDate>Thu, 24 Feb 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.52</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>7</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Flutter</title>
-            <description>Back to the brunt and borne into time, empty&apos;s the mirror shape of shine.</description>
+            <description>Back to the brunt and borne into time, empty&apos;s the mirror shorn of shine.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/066.mp3" length="11808832" type="audio/mpeg" />
             <link>https://intothemoss.co.uk/episodes/s05/07</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/066.jpg"/>
