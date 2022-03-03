@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>9</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Desert</title>
+            <description>In a crowded copse, gargling on raw, teething gums, hidden troubles spread.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/068.mp3" length="13080937" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/09</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/068.jpg"/>
+            <guid>itm20220303</guid>
+            <pubDate>Thu, 03 Mar 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>8</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Spooning</title>
