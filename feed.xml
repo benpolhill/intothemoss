@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Minced</title>
+            <description>Appliances wait, electricity building orgasmic power.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/069.mp3" length="11965902" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/069.jpg"/>
+            <guid>itm20220310</guid>
+            <pubDate>Thu, 10 Mar 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>9</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Desert</title>
