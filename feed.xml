@@ -20,6 +20,20 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>5</itunes:season>
+            <title>Quarry</title>
+            <description>Floating on fire’s heat, calm breath opens a latched door.
+Blood and thunder stilled.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/071.mp3" length="13106024" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s05/12</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/071.jpg"/>
+            <guid>itm20220324</guid>
+            <pubDate>Thu, 24 Mar 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>839.68</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>11</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Nucleation</title>
