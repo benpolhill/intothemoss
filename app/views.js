@@ -3,11 +3,13 @@ import links from "/app/links.js";
 let Views = function() { 
     return [
     {
+      id: '',
       route: "/",
       title: "Home",
       markup: ``,
     },
     {
+      id: '',
       route: "/about",
       title: "About",
       markup: `
@@ -18,6 +20,7 @@ let Views = function() {
       </p>`,
     },
     {
+      id: '',
       route: "/contact",
       title: "Contact",
       markup: `<p>
@@ -25,6 +28,7 @@ let Views = function() {
   </p>`,
     },
     {
+      id: '',
       route: "/episodes",
       title: "Episodes",
       markup: `<h1>Episodes</h1>
@@ -34,6 +38,7 @@ let Views = function() {
       </ul>`,
     },
     {
+      id: '',
       route: "/episodes/s02",
       title: "Season 2",
       markup: `<h1>Season 2</h1>`,
