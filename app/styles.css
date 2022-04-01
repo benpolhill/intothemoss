@@ -3,13 +3,39 @@ html, body {
     padding: 0;
     margin: 0;
 }
+.logo {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+.logo {
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) .6s;
+}
+.logo svg {
+    transition: opacity cubic-bezier(0.4, 0, 0.2, 1) .6s;
+}
+.logo svg {
+    height: 100%;
+}
+.hide {
+    background-color: rgba(0,0,0,0);
+}
+.hide svg {
+    opacity: 0;
+}
+.hidden {
+    display: none;
+}
 nav {
     text-align: center;
 }
 nav a {
     padding: 0 1em;
 }
-nav, header, .info {
+nav, .info {
     display: none;
 }
 a {
@@ -81,13 +107,6 @@ article .info {
 .info > p {
     margin-top: 0;
 }
-.title {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 #episode-player {
     display: flex;
     flex-wrap: wrap;
@@ -100,10 +119,4 @@ article .info {
 .episode-text {
     display: none;
     white-space: pre-wrap;
-}
-#into, #moss {
-    height: 150px;
-}
-#the {
-    height: 60px;
 }
