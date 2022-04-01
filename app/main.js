@@ -30,6 +30,11 @@ import Views from "/app/views.js";
     return n.toString().padStart(p, "0");
   }
 
+  const isTouchScreen = ()=> {
+    return ( 'ontouchstart' in window )
+  }
+  console.log(`isTouchScreen? ${isTouchScreen()}`);
+
   // Add XML item data to each view & route
   xmlItems.forEach((item, i) => {
     const id = xmlItems.length - i;
@@ -73,15 +78,6 @@ import Views from "/app/views.js";
       </div>
       <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander'>Episode text &darr;</a></p>`;
 
-    // fetch(textPath)
-    //   .then((response) => response.text())
-    //   .then((epText) => {
-    //     if (epText.startsWith("<")) {
-    //       return;
-    //     }
-    //     view.markup += `<pre class='episode-text'>${epText}</pre>`;
-    //   });
-
     // Append each route to the router array
     router = [...router, route];
     // Append each view to the views array
@@ -117,7 +113,7 @@ import Views from "/app/views.js";
   if (currentPath === "/") {
     main.innerHTML = view.markup;
     logo.classList.remove("hidden");
-    handleLogoVisibility();
+    isTouchScreen() ? handleLogoVisibility("touchstart") : handleLogoVisibility("mousemove");
   } else {
     // Check if route exists in routerInstance
     let route = router.filter((r) => r.path === currentPath)[0];
@@ -182,10 +178,10 @@ import Views from "/app/views.js";
     }
   });
 
-  function handleLogoVisibility() {
+  function handleLogoVisibility(eventType) {
     let x;
     document.addEventListener(
-      "mousemove",
+      eventType,
       function () {
         if (x) {
           clearTimeout(x);
@@ -224,7 +220,7 @@ import Views from "/app/views.js";
       // We wan't to remove the logo from all pages apart from home
       if (routeInfo.path == "/") {
         logo.classList.remove("hidden");
-        handleLogoVisibility();
+        isTouchScreen() ? handleLogoVisibility("touchstart") : handleLogoVisibility("mousemove");
       } else {
         removeLogo();
       }
