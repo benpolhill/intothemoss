@@ -80,7 +80,6 @@ Sentry.init({
     views = [...views, view];
     // Build the home page list of episodes
     views[0].markup += `
-      <article>
         <div class='thumb'>
           <a class='router-link' href='${path}'>
             <picture>
@@ -88,12 +87,12 @@ Sentry.init({
               <img src='/episodes/images/jpg/150/${pad(id,3)}.jpg' loading='lazy'>
             </picture>
           </a>
+          <div class='info'>
+            <h2><a class='router-link' href='${path}'>${id}: ${title}</a></h2>
+            <p>${description}</p>
+          </div>
         </div>
-        <div class='info'>
-          <h2><a class='router-link' href='${path}'>${id}: ${title}</a></h2>
-          <p>${description}</p>
-        </div>
-      </article>`; 
+      `; 
   });
 
   const main = document.getElementById('main');
