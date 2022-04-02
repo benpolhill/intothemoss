@@ -87,6 +87,7 @@ import Views from "/app/views.js";
     views[0].markup += `
         <div class='thumb'>
           <a class='router-link' href='${path}'>
+            <p class="id">${id}</p>
             <picture>
               <source srcset='/episodes/images/webp/150/${pad(
                 id,
@@ -98,10 +99,6 @@ import Views from "/app/views.js";
               )}.jpg' loading='lazy'>
             </picture>
           </a>
-          <div class='info'>
-            <h2><a class='router-link' href='${path}'>${id}: ${title}</a></h2>
-            <p>${description}</p>
-          </div>
         </div>
       `;
   });
@@ -113,7 +110,6 @@ import Views from "/app/views.js";
   let view = views.filter((v) => v.route === currentPath)[0];
   
   function buildPage(path) {
-    console.log(`building page, current path is ${currentPath}`);
     if (path == "/") {
       main.innerHTML = view.markup;
       main.classList.add('home');
