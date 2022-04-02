@@ -113,9 +113,12 @@ import Views from "/app/views.js";
     if (path == "/") {
       main.innerHTML = view.markup;
       main.classList.add('home');
+      main.classList.remove('episode');
       logo.classList.remove("hidden");
       isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
     } else {
+      main.classList.add('episode');
+      main.classList.remove('home');
       // Check if route exists in routerInstance
       let route = router.filter((r) => r.path === path)[0];
       if (route) {
