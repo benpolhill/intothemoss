@@ -113,7 +113,7 @@ import Views from "/app/views.js";
   if (currentPath === "/") {
     main.innerHTML = view.markup;
     logo.classList.remove("hidden");
-    isTouchScreen() ? handleLogoVisibility("touchstart") : handleLogoVisibility("mousemove");
+    isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
   } else {
     // Check if route exists in routerInstance
     let route = router.filter((r) => r.path === currentPath)[0];
@@ -220,7 +220,7 @@ import Views from "/app/views.js";
       // We wan't to remove the logo from all pages apart from home
       if (routeInfo.path == "/") {
         logo.classList.remove("hidden");
-        isTouchScreen() ? handleLogoVisibility("touchstart") : handleLogoVisibility("mousemove");
+        isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
       } else {
         removeLogo();
       }
