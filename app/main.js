@@ -25,15 +25,16 @@ import Views from "/app/views.js";
   
   let views = new Views();
   let router = new Router();
-  
+ 
+  // Pad numbers with zeros, default 2, i.e. 69 -> 069
   function pad(n, p = 2) {
     return n.toString().padStart(p, "0");
   }
 
-  const isTouchScreen = ()=> {
-    return ( 'ontouchstart' in window )
+  // Detect whether touchscreen
+  function isTouchScreen() {
+    return ('ontouchstart' in window);
   }
-  console.log(`isTouchScreen? ${isTouchScreen()}`);
 
   // Add XML item data to each view & route
   xmlItems.forEach((item, i) => {
@@ -110,36 +111,38 @@ import Views from "/app/views.js";
   const pageTitle = document.getElementsByTagName("title")[0];
   let currentPath = window.location.pathname;
   let view = views.filter((v) => v.route === currentPath)[0];
-  if (currentPath === "/") {
-    main.innerHTML = view.markup;
-    logo.classList.remove("hidden");
-    isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
-  } else {
-    // Check if route exists in routerInstance
-    let route = router.filter((r) => r.path === currentPath)[0];
-    if (route) {
-      let textPath = `/episodes/text/${pad(view.id, 3)}.txt`;
-      console.log(`textPath: ${textPath}`);
-      fetch(textPath)
-        .then((response) => response.text())
-        .then((epText) => {
-          if (epText.startsWith("<")) {
-            return;
-          } else {
-            console.log(`we should be adding to view.markup: ${view.markup}`);
-            let epTextElem = document.createElement('pre');
-            epTextElem.classList.add('episode-text');
-            epTextElem.innerText = epText;
-            document.getElementById('main').appendChild(epTextElem);
-            // view.markup += `<pre class='episode-text'>${epText}</pre>`;
-            // console.log(view.markup);
-          }
-        });
+  
+  function buildPage(path) {
+    console.log(`building page, current path is ${currentPath}`);
+    if (path == "/") {
       main.innerHTML = view.markup;
+      main.classList.add('home');
+      logo.classList.remove("hidden");
+      isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
     } else {
-      main.innerHTML = views[0].markup; // Default to home if no route defined
+      // Check if route exists in routerInstance
+      let route = router.filter((r) => r.path === path)[0];
+      if (route) {
+        let textPath = `/episodes/text/${pad(view.id, 3)}.txt`;
+        fetch(textPath)
+          .then((response) => response.text())
+          .then((epText) => {
+            if (epText.startsWith("<")) {
+              return;
+            } else {
+              let epTextElem = document.createElement('pre');
+              epTextElem.classList.add('episode-text');
+              epTextElem.innerText = epText;
+              document.getElementById('main').appendChild(epTextElem);
+            }
+          });
+        main.innerHTML = view.markup;
+      } else {
+        main.innerHTML = views[0].markup; // Default to home if no route defined
+      }
     }
   }
+  buildPage(currentPath);
 
   let routeHistory = [];
 
@@ -216,11 +219,11 @@ import Views from "/app/views.js";
       window.history.pushState({}, "", "error");
       main.innerHTML = `This route is not defined`;
     } else {
-      console.log(`routeInfo.path == ${routeInfo.path}`);
-      // We wan't to remove the logo from all pages apart from home
+      // We want to remove the logo from all pages apart from home
       if (routeInfo.path == "/") {
-        logo.classList.remove("hidden");
-        isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
+        buildPage(routeInfo.path);
+        // logo.classList.remove("hidden");
+        // isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
       } else {
         removeLogo();
       }
