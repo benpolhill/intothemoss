@@ -221,9 +221,11 @@ import Views from "/app/views.js";
       // We want to remove the logo from all pages apart from home
       if (routeInfo.path == "/") {
         buildPage(routeInfo.path);
+        main.classList.remove('episode');
         // logo.classList.remove("hidden");
         // isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
       } else {
+        main.classList.remove('home');
         removeLogo();
       }
       window.history.pushState({}, "", routeInfo.path);
