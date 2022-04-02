@@ -46,7 +46,7 @@ p a {
     border-bottom: 1px dashed #455520;
 }
 body {
-    background: url('./images/bg.jpg') #0c0d10 top center repeat fixed;
+    background: #0c0d10;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     height: 100vw;
