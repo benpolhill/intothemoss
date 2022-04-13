@@ -38,6 +38,9 @@ html, body {
 .hidden {
     display: none;
 }
+.shown {
+    display: block;
+}
 .id {
     position: absolute;
 }

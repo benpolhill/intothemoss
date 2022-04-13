@@ -77,7 +77,7 @@ import Views from "/app/views.js";
           <p>First broadcast on <a href="https://resonancefm.com" target="_blank">Resonance 104.4 FM</a>,  ${pubDate}.</p>
         </div>
       </div>
-      <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander'>Episode text &darr;</a></p>`;
+      <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander hidden'>Episode text &darr;</a></p>`;
 
     // Append each route to the router array
     router = [...router, route];
@@ -133,6 +133,8 @@ import Views from "/app/views.js";
               epTextElem.classList.add('episode-text');
               epTextElem.innerText = epText;
               document.getElementById('main').appendChild(epTextElem);
+              const textExp = document.querySelector('.expander');
+              textExp.classList.remove('hidden');
             }
           });
         main.innerHTML = view.markup;
