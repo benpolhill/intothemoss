@@ -5,8 +5,12 @@
 
 The podcast MP3 should be encoded for optimised streaming. Use VBR quality 5. This can be done with [FFmpeg](https://ffmpeg.org/download.html) using this command:
 ```bash
-ffmpeg -i 001.wav -c:a libmp3lame -q:a 5 001.mp3
-``` 
+ffmpeg -i 001.wav -q:a 5 001.mp3
+```
+`-q:a` will encode VBR; 0 is high 9 is low. Or save as max-quality CBR:
+```
+ffmpeg -i 001.wav -ab 320k 001.mp3
+```
 The MP3 is then saved in `/episodes/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three digits, i.e. 022.mp3.
 ### 2. Save episode artwork
 
