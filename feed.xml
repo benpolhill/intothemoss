@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>1</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Pledge</title>
+            <description>Nihilist checklist. Absence is ever-present, skimming over planes.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/075.mp3" length="12385645" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/01</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/075.jpg"/>
+            <guid>itm20220421</guid>
+            <pubDate>Thu, 21 Apr 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>15</itunes:episode>
             <itunes:season>5</itunes:season>
             <title>Mister</title>
