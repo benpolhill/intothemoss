@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Hallway</title>
+            <description>Relentless chirping. Spared from echoes resounding, I&apos;m in the hallway.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/076.mp3" length="12190022" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/02</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/076.jpg"/>
+            <guid>itm20220428</guid>
+            <pubDate>Thu, 28 Apr 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>1</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Pledge</title>
