@@ -20,12 +20,12 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
-            <itunes:episode></itunes:episode>
+            <itunes:episode>3</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Gaijin</title>
             <description>From seismic bubbles, the vassal’s vapour-weight hangs. Entombed in his hide.</description>
             <enclosure url="https://intothemoss.co.uk/episodes/audio/077.mp3" length="16391858" type="audio/mpeg" />
-            <link>https://intothemoss.co.uk/episodes/s06/00</link>
+            <link>https://intothemoss.co.uk/episodes/s06/03</link>
             <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/077.jpg"/>
             <guid>itm20220505</guid>
             <pubDate>Thu, 05 May 2022 18:30:00 +0000</pubDate>
