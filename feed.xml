@@ -12,13 +12,26 @@
             <itunes:category text="Comedy Fiction"/>
         </itunes:category>
         <link>https://intothemoss.co.uk</link>
-        <copyright>&#xA9; Into the Moss 2020-2022</copyright>
+        <copyright>&#xA9; Into the Moss 2020-2021</copyright>
         <itunes:author>Into the Moss</itunes:author>
         <itunes:owner>
             <itunes:name>James Baxter, James Ferris, Ben Polhill</itunes:name>
             <itunes:email>intothemossradio@gmail.com</itunes:email>
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
+        <item>
+            <itunes:episode>4</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Body</title>
+            <description>Hollow limb&apos;s missing. “Just one more bloat of the lungs? Just one more breath please!”</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/078.mp3" length="12889149" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/04</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/078.jpg"/>
+            <guid>itm20220512</guid>
+            <pubDate>Thu, 12 May 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
         <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>6</itunes:season>
