@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Chalk</title>
+            <description>Meagre flakes of snow flit by the foul mountain&apos;s feet, looking for long sleeves.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/079.mp3" length="12010137" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/079.jpg"/>
+            <guid>itm20220519</guid>
+            <pubDate>Thu, 19 May 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>4</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Body</title>
