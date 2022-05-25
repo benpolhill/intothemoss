@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Jagger</title>
+            <description>Leafy green&apos;s the cure, now the soundstage is empty, marbles roll away.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/080.mp3" length="12582522" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/06</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/080.jpg"/>
+            <guid>itm20220526</guid>
+            <pubDate>Thu, 26 May 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Chalk</title>
