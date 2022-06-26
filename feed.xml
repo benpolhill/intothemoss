@@ -20,6 +20,32 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Chalked</title>
+            <description>Factory princes chalk up your doorstep while you sleep. It&apos;s just a frog cult. </description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/084.mp3" length="11549458" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/084.jpg"/>
+            <guid>itm20220623</guid>
+            <pubDate>Thu, 23 Jun 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>9</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Paperwork</title>
+            <description>Go into the sea and read out the lab&apos;s results. You will get a bun.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/083.mp3" length="9988427" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/09</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/083.jpg"/>
+            <guid>itm20220616</guid>
+            <pubDate>Thu, 16 Jun 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.18</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>8</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Locked</title>
