@@ -20,6 +20,58 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>14</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Fixtures</title>
+            <description>Rabbit on a leash, racing the inquisitive on the cold wet floor.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/088.mp3" length="15946961" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/14</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/088.jpg"/>
+            <guid>itm20220721</guid>
+            <pubDate>Thu, 21 Jul 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Streamy</title>
+            <description>Awash with rhythms, syllables thrown out of sight. Noise hums from afar.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/087.mp3" length="15383575" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/13</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/087.jpg"/>
+            <guid>itm20220714</guid>
+            <pubDate>Thu, 14 Jul 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Jelly</title>
+            <description>Falling through the hatch into a jellied moment, laughter girds the crowd.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/086.mp3" length="12230845" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/12</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/086.jpg"/>
+            <guid>itm20220707</guid>
+            <pubDate>Thu, 07 Jul 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>6</itunes:season>
+            <title>Shivers</title>
+            <description>Donahue messed up his appointment in Utah. But he’s some damp notes.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/085.mp3" length="11063779" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s06/11</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/085.jpg"/>
+            <guid>itm20220630</guid>
+            <pubDate>Thu, 30 Jun 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>10</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Chalked</title>
