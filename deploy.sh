@@ -16,7 +16,7 @@ convert jpg/1400/$EP_ID.jpg -resize 300x300 -quality 60 jpg/300/$EP_ID.jpg
 convert jpg/1400/$EP_ID.jpg -resize 300x300 -quality 60 jpg/150/$EP_ID.jpg
 cd $ROOT_DIR
 echo "Syncing episodes/audio dir..."
-rsync -arv episodes/audio/ root@dept2:/var/www/intothemoss.co.uk/episodes/audio
+rsync -arv episodes/audio/ root@dept2.co:/var/www/intothemoss.co.uk/episodes/audio
 npm run build
 git add .
 git commit -m "deploy episode $EP_ID"
