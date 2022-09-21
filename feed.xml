@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>1</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Inertia</title>
+            <description>A slippy wry pig, resting on a butcher&apos;s lip, senses the day&apos;s up.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/090.mp3" length="18058238" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/01</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/090.jpg"/>
+            <guid>itm20220915</guid>
+            <pubDate>Thu, 15 Sep 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>15</itunes:episode>
             <itunes:season>6</itunes:season>
             <title>Inched</title>
