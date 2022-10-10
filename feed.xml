@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>4</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Slender</title>
+            <description>No one is safe from the retro-fining tough love, or jellied meltdowns.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/093.mp3" length="18053090" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/04</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/093.jpg"/>
+            <guid>itm20221006</guid>
+            <pubDate>Thu, 06 Oct 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>7</itunes:season>
             <title>Andromeda</title>
