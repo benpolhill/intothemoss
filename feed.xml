@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Kippers</title>
+            <description>In a world of slops, bread drips from the mezzanine. A lift helps you fall.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/094.mp3" length="16463315" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/094.jpg"/>
+            <guid>itm20221013</guid>
+            <pubDate>Thu, 13 Oct 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.39</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>4</itunes:episode>
             <itunes:season>7</itunes:season>
             <title>Slender</title>
