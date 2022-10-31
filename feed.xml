@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Tastebud</title>
+            <description>Better read quickly; when matches wink at paper, the flames will catch on.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/096.mp3" length="15335774" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/07</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/096.jpg"/>
+            <guid>itm20221027</guid>
+            <pubDate>Thu, 27 Oct 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>7</itunes:season>
             <title>Broil</title>
