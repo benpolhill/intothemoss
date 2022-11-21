@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Dormant</title>
+            <description>Mouthing dormant hams, Todd&apos;s foot circles awkwardly. Trains tunnel through veins. </description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/099.mp3" length="17492736" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/10</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/099.jpg"/>
+            <guid>itm20221117</guid>
+            <pubDate>Thu, 17 Nov 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>9</itunes:episode>
             <itunes:season>7</itunes:season>
             <title>Porsche</title>
