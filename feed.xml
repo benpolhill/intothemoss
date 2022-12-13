@@ -20,6 +20,32 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Muntjacs</title>
+            <description>A stink lingers on, as muntjacs pause to draw blood. Spring waits for the kill.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/102.mp3" length="17062676" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/13</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/102.jpg"/>
+            <guid>itm20221208</guid>
+            <pubDate>Thu, 08 Dec 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>7</itunes:season>
+            <title>Husband</title>
+            <description>A dress rehearsal. Antique shop howls of the past. Omelette bathed in tea.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/101.mp3" length="17103402" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s07/12</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/101.jpg"/>
+            <guid>itm20221201</guid>
+            <pubDate>Thu, 01 Dec 2022 18:30:00 +0000</pubDate>
+            <itunes:duration>840.44</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>11</itunes:episode>
             <itunes:season>7</itunes:season>
             <title>Echo</title>
