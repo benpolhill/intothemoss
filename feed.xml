@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Carbolic</title>
+            <description>Dragged out of a ditch by the conscious yellow drip. Pass the carbolic.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/105.mp3" length="13683536" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s08/02</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/105.jpg"/>
+            <guid>itm20230119</guid>
+            <pubDate>Thu, 19 Jan 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>1</itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Spumes</title>
