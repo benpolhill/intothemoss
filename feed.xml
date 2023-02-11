@@ -20,6 +20,32 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Lens</title>
+            <description>Across the water, as the Mini Milks are mulched; is that brother&apos;s boat?</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/108.mp3" length="17525261" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s08/05</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/108.jpg"/>
+            <guid>itm20230209</guid>
+            <pubDate>Thu, 09 Feb 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>4</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Yolked</title>
+            <description>Dad yolked in a box. The dehumidifier prepares the repast.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/107.mp3" length="18123809" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s08/04</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/107.jpg"/>
+            <guid>itm20230202</guid>
+            <pubDate>Thu, 02 Feb 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Ornamented</title>
