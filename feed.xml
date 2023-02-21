@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Lilt</title>
+            <description>Languid jet pack dreams. Men screaming at men again, passing verbal gas.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/109.mp3" length="16938191" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s08/06</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/109.jpg"/>
+            <guid>itm20230216</guid>
+            <pubDate>Thu, 16 Feb 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.07</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Lens</title>
