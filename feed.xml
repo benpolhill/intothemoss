@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Oubliette</title>
+            <description>Cars pan to the sea. No sound of chuckling allowed. Load up the washer.</description>
+            <enclosure url="https://intothemoss.co.uk/episodes/audio/110.mp3" length="17111397" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/s08/07</link>
+            <itunes:image href="https://intothemoss.co.uk/episodes/images/jpg/1400/110.jpg"/>
+            <guid>itm20230216</guid>
+            <pubDate>Thu, 23 Feb 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Lilt</title>
