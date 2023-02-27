@@ -32,7 +32,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>" >> $F
 
-for f in $(ls -r ./episodes/audio/*.mp3); do
+for f in $(ls -r ./audio/*.mp3); do
     echo "Processing $f"
     file=${f##*/}
     index="${file%.*}"
@@ -57,9 +57,9 @@ for f in $(ls -r ./episodes/audio/*.mp3); do
             <itunes:season>$season</itunes:season>
             <title>$title</title>
             <description>$desc</description>
-            <enclosure url=\"$URL/episodes/audio/$file\" length=\"$size\" type=\"audio/mpeg\" />
+            <enclosure url=\"$URL/audio/$file\" length=\"$size\" type=\"audio/mpeg\" />
             <link>$URL/episodes/s$seasonpad/$episodepad</link>
-            <itunes:image href=\"$URL/episodes/images/jpg/1400/$index.jpg\"/>
+            <itunes:image href=\"$URL/assets/images/jpg/1400/$index.jpg\"/>
             <guid>$guid</guid>
             <pubDate>Thu, $released 18:30:00 +0000</pubDate>
             <itunes:duration>$duration</itunes:duration>

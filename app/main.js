@@ -37,7 +37,7 @@ Sentry.init({
     let path = new URL(link).pathname;
     let title = item.querySelector("title").innerHTML;
     let description = item.querySelector("description").innerHTML;
-    let textPath = `/episodes/text/${pad(id,3)}.txt`;
+    let textPath = `/assets/text/${pad(id,3)}.txt`;
     let pubDate = item.querySelector("pubDate").innerHTML;
     pubDate = pubDate.substring(5, 16);
     // const texty = await Promise.resolve(text);
@@ -52,12 +52,12 @@ Sentry.init({
       <div id='episode-player'>
         <div class='thumb'>
           <picture>
-            <source srcset='/episodes/images/webp/300/${pad(id,3)}.webp' type='image/webp'>
-            <img src='/episodes/images/jpg/300/${pad(id,3)}.jpg' loading='lazy'>
+            <source srcset='/assets/images/webp/300/${pad(id,3)}.webp' type='image/webp'>
+            <img src='/assets/images/jpg/300/${pad(id,3)}.jpg' loading='lazy'>
           </picture>
         </div>
         <div id='player-info'>
-          <audio controls src='/episodes/audio/${pad(id,3)}.mp3'></audio>
+          <audio controls src='/audio/${pad(id,3)}.mp3'></audio>
           <p>${description}</p>
           <p>First broadcast on <a href="https://resonancefm.com" target="_blank">Resonance 104.4 FM</a>,  ${pubDate}.</p>
         </div>
@@ -84,8 +84,8 @@ Sentry.init({
         <div class='thumb'>
           <a class='router-link' href='${path}'>
             <picture>
-              <source srcset='/episodes/images/webp/150/${pad(id,3)}.webp' type='image/webp'>
-              <img src='/episodes/images/jpg/150/${pad(id,3)}.jpg' loading='lazy'>
+              <source srcset='/assets/images/webp/150/${pad(id,3)}.webp' type='image/webp'>
+              <img src='/assets/images/jpg/150/${pad(id,3)}.jpg' loading='lazy'>
             </picture>
           </a>
         </div>
