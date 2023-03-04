@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>8</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Sinew</title>
+            <description>Do not ride gently over that sheer precipice; squeal like a piglet. </description>
+            <enclosure url="https://intothemoss.co.uk/audio/111.mp3" length="18084350" type="audio/mpeg" />
+            <link>https://intothemoss.co.uk/episodes/111</link>
+            <itunes:image href="https://intothemoss.co.uk/assets/images/jpg/1400/111.jpg"/>
+            <guid>itm20230302</guid>
+            <pubDate>Thu, 02 Mar 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>7</itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Oubliette</title>
