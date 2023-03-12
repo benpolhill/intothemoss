@@ -61,18 +61,18 @@ import Views from "/app/views.js";
       <div id='episode-player'>
         <div class='thumb'>
           <picture>
-            <source srcset='/episodes/images/webp/300/${pad(
+            <source srcset='/assets/images/webp/300/${pad(
               id,
               3
             )}.webp' type='image/webp'>
-            <img src='/episodes/images/jpg/300/${pad(
+            <img src='/assets/images/jpg/300/${pad(
               id,
               3
             )}.jpg' loading='lazy'>
           </picture>
         </div>
         <div id='player-info'>
-          <audio controls src='/episodes/audio/${pad(id, 3)}.mp3'></audio>
+          <audio controls src='/audio/${pad(id, 3)}.mp3'></audio>
           <p>${description}</p>
           <p>First broadcast on <a href="https://resonancefm.com" target="_blank">Resonance 104.4 FM</a>,  ${pubDate}.</p>
         </div>
@@ -89,11 +89,11 @@ import Views from "/app/views.js";
           <a class='router-link' href='${path}'>
             <p class="id">${id}</p>
             <picture>
-              <source srcset='/episodes/images/webp/150/${pad(
+              <source srcset='/assets/images/webp/150/${pad(
                 id,
                 3
               )}.webp' type='image/webp'>
-              <img src='/episodes/images/jpg/150/${pad(
+              <img src='/assets/images/jpg/150/${pad(
                 id,
                 3
               )}.jpg' loading='lazy'>
@@ -104,25 +104,28 @@ import Views from "/app/views.js";
   });
 
   const main = document.getElementById("main");
-  const logo = document.querySelector(".logo");
+  // const logo = document.querySelector(".logo");
   const pageTitle = document.getElementsByTagName("title")[0];
   let currentPath = window.location.pathname;
   let view = views.filter((v) => v.route === currentPath)[0];
   
   function buildPage(path) {
     if (path == "/") {
-      main.innerHTML = view.markup;
-      main.classList.add('home');
-      main.classList.remove('episode');
-      logo.classList.remove("hidden");
+      main.insertAdjacentHTML('beforeend', view.markup);
+      // main.innerHTML = view.markup;
+      // main.classList.add('home');
+      // main.classList.remove('episode');
+      main.classList = ['home',];
+      // logo.classList.remove("hidden");
       isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
     } else {
-      main.classList.add('episode');
-      main.classList.remove('home');
+      // main.classList.add('episode');
+      // main.classList.remove('home');
+      main.classList = ['episode',];
       // Check if route exists in routerInstance
       let route = router.filter((r) => r.path === path)[0];
       if (route) {
-        let textPath = `/episodes/text/${pad(view.id, 3)}.txt`;
+        let textPath = `/assets/text/${pad(view.id, 3)}.txt`;
         fetch(textPath)
           .then((response) => response.text())
           .then((epText) => {
@@ -138,11 +141,14 @@ import Views from "/app/views.js";
             }
           });
         main.innerHTML = view.markup;
+        console.log("The HTML we're getting is:::");
+        console.log(view.markup);
       } else {
         main.innerHTML = views[0].markup; // Default to home if no route defined
       }
     }
   }
+  console.log(`Here we are, building ${currentPath} at root scope!`);
   buildPage(currentPath);
 
   let routeHistory = [];
@@ -151,6 +157,7 @@ import Views from "/app/views.js";
     // Back
     let lastRoute = routeHistory.pop();
     let navTo = routeHistory[routeHistory.length - 1] || "/";
+    console.log(`Navigating to ${navTo}, as window.onpopstate has been triggered!`);
     navigate(navTo);
     // Forward? who cares
   };
@@ -158,53 +165,66 @@ import Views from "/app/views.js";
   document.addEventListener("click", (e) => {
     // With thumbnail images, the clicked target will be the image,
     // so we have to specify to use the parent `a` link as the target
-    let target = e.target.classList.contains("router-link")
-      ? e.target
-      : e.target.parentNode.classList.contains("router-link")
-      ? e.target.parentNode
-      : e.target.classList.contains("expander")
-      ? e.target
-      : null;
-    if (target) {
-      if (target.classList.contains("expander")) {
-        try {
-          e.preventDefault;
-          document.querySelector(".episode-text").style.display = "block";
-          return;
-        } catch (e) {
-          return;
-        }
-        return;
-      }
-      e.preventDefault();
-      navigate(target.pathname);
-      routeHistory = [...routeHistory, target.pathname];
+    e.preventDefault();
+    console.log("E.TARGET.CLOSEST('.router-link') IS THIS:");
+    console.log(e.target.closest('.router-link'));
+    // if (e.target.classList.contains("router-link") || e.target.classList.contains("expander")) {
+    let target = e.target;
+    // }
+    if (e.target.closest('.router-link')) {
+      target = e.target.closest('.router-link');
     }
+    console.log("The 'target':");
+    console.log(target);
+    console.log("WE HAVE CLICKED THE ROUTER LINK!!!");
+    navigate(target.pathname);
+    routeHistory = [...routeHistory, target.pathname];
+    try {
+      // e.preventDefault();
+      document.querySelector(".episode-text").style.display = "block";
+      return;
+    } catch (e) {
+      return;
+    }
+    // e.preventDefault();
   });
 
   function handleLogoVisibility(eventType) {
+    console.log("handling logo visibility, which should only happen on homepage, / ");
+    console.log("View is::::::::");
+    console.log(view);
+    // if (view.route != "/") return;
     let x;
-    document.addEventListener(
-      eventType,
-      function () {
-        if (x) {
-          clearTimeout(x);
-          removeLogo();
-        }
-        x = setTimeout(() => {
-          showLogo();
-        }, 1200);
-      },
-      false
-    );
+    try {
+      document.addEventListener(
+        eventType,
+        function () {
+          let logo = document.querySelector('.logo');
+          if (x) {
+            clearTimeout(x);
+            removeLogo(logo);
+          }
+          x = setTimeout(() => {
+            showLogo(logo);
+          }, 1200);
+        },
+        false
+      );
+    } catch (e) {
+      console.info(`TypeError: ${e}`);
+    }
   }
-  function removeLogo() {
-    logo.classList.add("hide");
-    setTimeout(() => {
-      logo.classList.add("hidden");
-    }, 400);
+  function removeLogo(logo) {
+    try {
+      logo.classList.add("hide");
+      setTimeout(() => {
+        logo.classList.add("hidden");
+      }, 400);
+    } catch(e) {
+      console.info(`Can't remove ${logo} because it doesn't exist! (${e}).`);
+    }
   }
-  function showLogo() {
+  function showLogo(logo) {
     logo.classList.remove("hidden");
     setTimeout(() => {
       logo.classList.remove("hide");
@@ -212,9 +232,14 @@ import Views from "/app/views.js";
   }
 
   function navigate(route) {
+    console.log(`Navigating to ${route}`);
     // Redirect to the router instance
     let routeInfo = router.filter((r) => r.path === route)[0];
+    console.log(`routeInfo is :`);
+    console.log(routeInfo);
     let view = views.filter((v) => v.route === route)[0];
+    console.log(`view is :`);
+    console.log(view);
     // let definedRoutes = Array.from(document.getElementsByClassName('router-link'));
     if (!routeInfo) {
       window.history.pushState({}, "", "error");
@@ -228,7 +253,7 @@ import Views from "/app/views.js";
         // isTouchScreen() ? handleLogoVisibility("scroll") : handleLogoVisibility("mousemove");
       } else {
         main.classList.remove('home');
-        removeLogo();
+        // removeLogo();
       }
       window.history.pushState({}, "", routeInfo.path);
       pageTitle.innerHTML = `Into the Moss | ${view.title}`;
