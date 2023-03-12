@@ -1,13 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+@font-face {
+    font-family: 'charming_smile';
+    src: url('fonts/charming-smile-demo.regular-webfont.woff2') format('woff2'),
+         url('fonts/charming-smile-demo.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     padding: 0;
     margin: 0;
+}
+.logo {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+.logo {
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) .6s;
+}
+.logo svg {
+    transition: opacity cubic-bezier(0.4, 0, 0.2, 1) .6s;
+}
+.logo svg {
+    height: 100%;
+}
+.hide {
+    background-color: rgba(0,0,0,0);
+}
+.hide svg {
+    opacity: 0;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
+.id {
+    position: absolute;
 }
 nav {
     text-align: center;
 }
 nav a {
     padding: 0 1em;
+}
+nav, .info {
+    display: none;
 }
 a {
     text-decoration: none;
@@ -17,7 +61,7 @@ p a {
     border-bottom: 1px dashed #455520;
 }
 body {
-    background: url('./images/bg.jpg') #0c0d10 top center repeat fixed;
+    background: #0c0d10;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     height: 100vw;
@@ -28,8 +72,19 @@ body, a {
 h1, h2, h3 {
     font-weight: 300;
 }
-h1, h2, h3, h4 {
-    color: #BE9460;
+h1, h2, h3, h4, .id {
+    font-family: charming_smile, sans-serif;
+    color: #ffffff;
+}
+.id {
+    opacity: 0;
+    font-size: 2rem;
+    text-shadow: 1px 1px 30px #00000059;
+    letter-spacing: .08em;
+    transition: opacity ease-in-out .25s;
+}
+.thumb:hover .id, .thumb:focus .id {
+    opacity: 1;
 }
 h4 {
     font-weight: 800;
@@ -38,15 +93,24 @@ h2 a, h3 a, h4 a {
     color: #BE9460;
 }
 main {
-    width: 80vw;
-    max-width: 900px;
-    margin: 1rem auto 2rem;
+    /* width: 100vw; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* max-width: 900px; */
+    /* margin: 1rem auto 2rem; */
+}
+main.home {
+    width: 100vw;
+    display: flex;
+}
+main.episode {
+    padding: 2rem;
 }
 audio {
     width: 100%;
 }
 article {
-    border-bottom: 1px solid #344c0b;
+    /* border-bottom: 1px solid #344c0b; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -60,23 +124,31 @@ article .thumb {
     width: 200px;
     margin: 0 1.5rem 1.5rem 0;
 }
+.thumb {
+    flex: 1 0 auto;
+}
+.thumb a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.thumb picture {
+    flex: 1 0 auto;
+    height: 100%;
+}
 .thumb img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 article .info {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     flex: 1 0 40%;
 }
 .info > p {
     margin-top: 0;
-}
-.title {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 #episode-player {
     display: flex;
@@ -90,10 +162,4 @@ article .info {
 .episode-text {
     display: none;
     white-space: pre-wrap;
-}
-#into, #moss {
-    height: 150px;
-}
-#the {
-    height: 60px;
 }
