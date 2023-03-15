@@ -14,7 +14,7 @@ jobs:
         with:
           switches: -avzr --delete --exclude=".*"
           path: ./
-          remote_path: /var/www/html/dev.intothemoss.co.uk/
+          remote_path: /var/www/html/dev.intothemoss.com/
           remote_host: dept2.co
           remote_user: root
           remote_key: ${{ secrets.DEPLOY_KEY }} 
