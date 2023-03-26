@@ -20,6 +20,20 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Gum</title>
+            <description>Floodlit streets converge, embracing only matter.
+Bonds form in turmoil.</description>
+            <enclosure url="https://intothemoss.com/audio/114.mp3" length="14353330" type="audio/mpeg" />
+            <link>https://intothemoss.com/episodes/114</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/114.jpg"/>
+            <guid>itm20230323</guid>
+            <pubDate>Thu, 23 Mar 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode></itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Gone</title>
