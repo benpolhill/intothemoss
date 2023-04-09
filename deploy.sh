@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
     read EP_ID
 fi
 
-sh buildXML.sh
+#sh buildXML.sh
 cd $IMGS_DIR
 cwebp -resize 1000 1000 -q 50 jpg/1400/$EP_ID.jpg -o webp/1000/$EP_ID.webp
 cwebp -resize 150 150 -q 50 jpg/1400/$EP_ID.jpg -o webp/150/$EP_ID.webp

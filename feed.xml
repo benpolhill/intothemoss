@@ -20,6 +20,32 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Copplestone</title>
+            <description>A bishop got brained. His bones lay at the crossroad. A passage through time.</description>
+            <enclosure url="https://intothemoss.com/audio/116.mp3" length="13796358" type="audio/mpeg" />
+            <link>https://intothemoss.com/episodes/116</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/116.jpg"/>
+            <guid>itm20230406</guid>
+            <pubDate>Thu, 06 Apr 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>8</itunes:season>
+            <title>Eotogram</title>
+            <description>The Eotogram sat frail in my sister&apos;s grasp. I held it better.</description>
+            <enclosure url="https://intothemoss.com/audio/115.mp3" length="14228544" type="audio/mpeg" />
+            <link>https://intothemoss.com/episodes/115</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/115.jpg"/>
+            <guid>itm20230406</guid>
+            <pubDate>Thu, 30 Mar 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>11</itunes:episode>
             <itunes:season>8</itunes:season>
             <title>Gum</title>
