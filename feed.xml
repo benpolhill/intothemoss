@@ -22,6 +22,19 @@
         <item>
             <itunes:episode></itunes:episode>
             <itunes:season>9</itunes:season>
+            <title>Pearlescent</title>
+            <description>Pearlescent eye patch drifting on ahead to rest. Dinosaur ink drips.</description>
+            <enclosure url="https://intothemoss.com/audio/123.mp3" length="17736636" type="audio/mpeg" />
+            <link>https://intothemoss.com/episodes/123</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/123.jpg"/>
+            <guid>itm20230525</guid>
+            <pubDate>Thu, 25 May 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.12</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
+            <itunes:episode></itunes:episode>
+            <itunes:season>9</itunes:season>
             <title>Gurgletops</title>
             <description>Dolo Uldolsted, gathered in his own netting: Sea of tatami.</description>
             <enclosure url="https://intothemoss.com/audio/122.mp3" length="12371208" type="audio/mpeg" />
