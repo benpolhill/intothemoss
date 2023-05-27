@@ -1,3 +1,6 @@
+# Generated via GPT-4, multiple iterations. Last updated 2023-05-27
+# https://chat.openai.com/share/4b9083d7-31f7-49cc-851b-eb1de3615fa4
+
 import os
 import glob
 import datetime
@@ -49,7 +52,10 @@ def create_new_item(file_info, namespaces, latest_file, audio_info, episode, sea
     return new_item
 
 def create_element(namespace, tag, text):
-    element = ET.Element(ET.QName(namespace, tag))
+    if namespace:
+        element = ET.Element(ET.QName(namespace, tag))
+    else:
+        element = ET.Element(tag)
     element.text = text
     return element
 
