@@ -215,6 +215,7 @@ import Views from "/app/views.js";
     }
   }
   function removeLogo(logo) {
+    if (!logo) return;
     try {
       logo.classList.add("hide");
       setTimeout(() => {
@@ -225,6 +226,7 @@ import Views from "/app/views.js";
     }
   }
   function showLogo(logo) {
+    if (!logo) return;
     logo.classList.remove("hidden");
     setTimeout(() => {
       logo.classList.remove("hide");
@@ -242,8 +244,9 @@ import Views from "/app/views.js";
     console.log(view);
     // let definedRoutes = Array.from(document.getElementsByClassName('router-link'));
     if (!routeInfo) {
-      window.history.pushState({}, "", "error");
-      main.innerHTML = `This route is not defined`;
+      return;
+      // window.history.pushState({}, "", "error");
+      // main.innerHTML = `This route is not defined`;
     } else {
       // We want to remove the logo from all pages apart from home
       if (routeInfo.path == "/") {
