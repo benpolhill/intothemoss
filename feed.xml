@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>9</itunes:season>
+            <title>Team</title>
+            <description>It’s easy to be the best version of yourself with Into the Moss.</description>
+            <enclosure url="https://intothemoss.com/audio/125.mp3" length="17566704" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/125</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/125.jpg"/>
+            <guid>itm20230608</guid>
+            <pubDate>Thu, 08 Jun 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.41</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>9</itunes:season>
             <title>Gaps</title>
