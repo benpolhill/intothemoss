@@ -22,11 +22,19 @@ def get_file_length(latest_file):
     return str(os.path.getsize(latest_file))
 
 def tgid_to_datetime(tgid):
+    if len(tgid) < 3:
+        print(f"Invalid TGID value: {tgid}")
+        return None
+
     date_str = tgid[3:]
-    date = datetime.datetime.strptime(date_str, "%Y%m%d")
-    date = date.replace(hour=18, minute=30)
-    date = date.replace(tzinfo=datetime.timezone.utc)
-    return date
+    try:
+        date = datetime.datetime.strptime(date_str, "%Y%m%d")
+        date = date.replace(hour=18, minute=30)
+        date = date.replace(tzinfo=datetime.timezone.utc)
+        return date
+    except ValueError as e:
+        print(f"Unable to convert TGID value to date: {e}")
+        return None
 
 def create_new_item(file_info, namespaces, latest_file, audio_info, episode, season, title, desc, url, length, image, link, guid, pubdate, duration, explicit):
     new_item = ET.Element('item')
