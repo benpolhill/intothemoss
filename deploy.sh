@@ -33,13 +33,30 @@ echo -n "Episode number? [$next_track] "
 read track
 track=${track:-$next_track}
 
-echo -n "Publish date? [$default_date] "
-read date_input
-date_input=${date_input:-$default_date}
+while true; do
+    echo -n "Publish date? [$default_date] "
+    read date_input
+    date_input=${date_input:-$default_date}
+
+    if [[ $date_input =~ ^[0-9]{8}$ ]]; then
+        break
+    else
+        echo "Date must be in YYYYMMDD format."
+    fi
+done
 
 # Format date for the metadata
-formatted_date=$(date "$date_input" +'%d %m %Y')
-year=$(date "$date_input" +'%Y')
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    formatted_date=$(date -j -f "%Y%m%d" "$date_input" +'%d %m %Y')
+    year=$(date -j -f "%Y%m%d" "$date_input" +'%Y')
+else
+    formatted_date=$(date -d "$date_input" +'%d %m %Y')
+    year=$(date -d "$date_input" +'%Y')
+fi
+
+
+
+
 
 # Other prompts
 echo -n "Enter title: "
