@@ -117,7 +117,8 @@ def main():
     image = f"https://intothemoss.com/assets/images/jpg/1400/{episode_id}.jpg"
     link = "https://intothemoss.com/episodes/" + episode_id
     guid = info.get('TGID').text[0] if info.get('TGID') else ''
-    pubdate = tgid_to_datetime(info['TGID'][0]).strftime("%a, %d %b %Y %H:%M:%S %z")
+    # pubdate = tgid_to_datetime(info['TGID'][0]).strftime("%a, %d %b %Y %H:%M:%S %z")
+    pubdate = tgid_to_datetime(guid).strftime("%a, %d %b %Y %H:%M:%S %z")
     duration = audio.info.length
     # Round to two decimal places and convert to a string
     duration = "{:.2f}".format(duration)
