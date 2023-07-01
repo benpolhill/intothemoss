@@ -89,7 +89,7 @@ ffmpeg -i "$audio_file_path" -i "$img_file_path/$tracknum.jpg" -map 0 -map 1 -c 
 # Overwrite the original file with the temp file
 mv "$AUDIO_DIR/_${audio_file_name}" "$AUDIO_DIR/$audio_file_name"
 
-#python buildXML.py
+python buildXML.py
 cd $IMGS_DIR
 cwebp -resize 1000 1000 -q 50 jpg/1400/$EP_ID.jpg -o webp/1000/$EP_ID.webp
 cwebp -resize 150 150 -q 50 jpg/1400/$EP_ID.jpg -o webp/150/$EP_ID.webp
