@@ -48,6 +48,7 @@ import Views from "/app/views.js";
     // let textPath = `/episodes/text/${pad(id, 3)}.txt`;
     let pubDate = item.querySelector("pubDate").innerHTML;
     pubDate = pubDate.substring(5, 16);
+    const bg_img_url = `/assets/images/webp/1000/${pad(id, 3)}.webp`;
     // const texty = await Promise.resolve(text);
     route.id = pad(id);
     route.title = title;
@@ -57,27 +58,20 @@ import Views from "/app/views.js";
     view.title = title;
 
     view.markup = `
-      <h1>${id}: ${title}</h1>
-      <div id='episode-player'>
-        <div class='thumb'>
-          <picture>
-            <source srcset='/assets/images/webp/300/${pad(
-              id,
-              3
-            )}.webp' type='image/webp'>
-            <img src='/assets/images/jpg/300/${pad(
-              id,
-              3
-            )}.jpg' loading='lazy'>
-          </picture>
-        </div>
-        <div id='player-info'>
-          <audio controls src='/audio/${pad(id, 3)}.mp3'></audio>
-          <p>${description}</p>
-          <p>First broadcast on <a href="https://resonancefm.com" target="_blank">Resonance 104.4 FM</a>,  ${pubDate}.</p>
+      <div class='episode-player-container'>
+        <div id='episode-player' style='background-image:url(${bg_img_url})'>
+          <div class='player-info-container'>
+            <div id='player-info'>
+              <h1>${id}: ${title}</h1>
+              <audio controls src='/audio/${pad(id, 3)}.mp3'></audio>
+              <p>${description}</p>
+              <p>First broadcast on <a href="https://resonancefm.com" target="_blank">Resonance 104.4 FM</a>,  ${pubDate}.</p>
+              <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander hidden'>Episode text &darr;</a></p>
+            </div>
+          </div>
         </div>
       </div>
-      <p><a class='router-link' href='/'>&larr; Back to episodes</a> &nbsp; <a class='expander hidden'>Episode text &darr;</a></p>`;
+      `;
 
     // Append each route to the router array
     router = [...router, route];
@@ -85,7 +79,7 @@ import Views from "/app/views.js";
     views = [...views, view];
     // Build the home page list of episodes
     views[0].markup += `
-        <div class='thumb'>
+        <div class='episode-player-image'>
           <a class='router-link' href='${path}'>
             <p class="id">${id}</p>
             <picture>
@@ -163,7 +157,7 @@ import Views from "/app/views.js";
   };
   // TODO: rewrite all this as switch block for each type of click target
   document.addEventListener("click", (e) => {
-    // With thumbnail images, the clicked target will be the image,
+    // With episode-player-imagenail images, the clicked target will be the image,
     // so we have to specify to use the parent `a` link as the target
     e.preventDefault();
     console.log("E.TARGET.CLOSEST('.router-link') IS THIS:");

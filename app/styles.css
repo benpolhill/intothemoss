@@ -58,7 +58,7 @@ a {
     cursor: pointer;
 }
 p a {
-    border-bottom: 1px dashed #455520;
+    border-bottom: 1px dashed #696b66;
 }
 body {
     background: #0c0d10;
@@ -67,7 +67,7 @@ body {
     height: 100vw;
 }
 body, a {
-    color: #667d33;
+    color: #f5f5f5;
 }
 h1, h2, h3 {
     font-weight: 300;
@@ -83,28 +83,19 @@ h1, h2, h3, h4, .id {
     letter-spacing: .08em;
     transition: opacity ease-in-out .25s;
 }
-.thumb:hover .id, .thumb:focus .id {
+.episode-player-image:hover .id, .episode-player-image:focus .id {
     opacity: 1;
 }
 h4 {
     font-weight: 800;
 }
 h2 a, h3 a, h4 a {
-    color: #BE9460;
-}
-main {
-    /* width: 100vw; */
-    /* display: flex; */
-    flex-wrap: wrap;
-    /* max-width: 900px; */
-    /* margin: 1rem auto 2rem; */
+    /* color: #BE9460; */
 }
 main.home {
     width: 100vw;
     display: flex;
-}
-main.episode {
-    padding: 2rem;
+    flex-wrap: wrap;
 }
 audio {
     width: 100%;
@@ -114,33 +105,36 @@ article {
     display: flex;
     flex-wrap: wrap;
 }
-article .thumb {
+article .episode-player-image {
     width: 150px;
     height: 150px;
     flex: 0 0 auto;
     padding: 1rem 1rem 1rem 0;
 }
-#episode-player .thumb {
-    width: 200px;
-    margin: 0 1.5rem 1.5rem 0;
+#episode-player .episode-player-image {
+    /* width: 100%; */
+    /* margin: 0 1.5rem 1.5rem 0; */
+    /* position: absolute; */
+    /* width: 100vw; */
+    /* height: 100vh; */
 }
-.thumb {
+/* .episode-player-image {
     flex: 1 0 auto;
-}
-.thumb a {
+} */
+.episode-player-image a {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.thumb picture {
-    flex: 1 0 auto;
-    height: 100%;
+.episode-player-image picture {
+    /* flex: 1 0 auto; */
+    /* height: 100%; */
 }
-.thumb img {
+.episode-player-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 article .info {
     /* display: flex; */
@@ -150,14 +144,37 @@ article .info {
 .info > p {
     margin-top: 0;
 }
-#episode-player {
+.episode-player-container {
     display: flex;
-    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#episode-player {
+    width: 87%;
+    height: 87%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #episode-player #player-info {
+    /* display: flex;
+    width: 80%;
+    flex-direction: column; */
+}
+.player-info-container {
+    /* position: absolute;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex: 1 0 40%;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 .episode-text {
     display: none;
