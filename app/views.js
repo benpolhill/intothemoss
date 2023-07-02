@@ -9,8 +9,6 @@ let Views = function() {
       markup: ` 
       <div class="logo">
         <svg
-          width="210mm"
-          height="297mm"
           viewBox="0 0 210 297"
           version="1.1"
           id="svg5"
