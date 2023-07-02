@@ -118,9 +118,9 @@ article .episode-player-image {
     /* width: 100vw; */
     /* height: 100vh; */
 }
-/* .episode-player-image {
+.episode-player-image {
     flex: 1 0 auto;
-} */
+}
 .episode-player-image a {
     display: flex;
     justify-content: center;
@@ -128,8 +128,8 @@ article .episode-player-image {
     height: 100%;
 }
 .episode-player-image picture {
-    /* flex: 1 0 auto; */
-    /* height: 100%; */
+    flex: 1 0 auto;
+    height: 100%;
 }
 .episode-player-image img {
     width: 100%;
@@ -164,19 +164,19 @@ article .info {
     justify-content: center;
 }
 #episode-player #player-info {
-    /* display: flex;
-    width: 80%;
-    flex-direction: column; */
+    max-width: 600px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    outline: 30px solid rgba(0,0,0,0.5);
 }
 .player-info-container {
-    /* position: absolute;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; */
 }
 .episode-text {
     display: none;
     white-space: pre-wrap;
+    padding: 0 2rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
