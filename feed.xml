@@ -23,12 +23,12 @@
             <itunes:episode>11</itunes:episode>
             <itunes:season>9</itunes:season>
             <title>Convalescent</title>
-            <description/>
+            <description>Boxes and grey chairs. Silent faces, piled up limbs. Thursday's grim demise.</description>
             <enclosure url="https://intothemoss.com/audio/129.mp3" length="19572166" type="audio/mpeg"/>
             <link>https://intothemoss.com/episodes/129</link>
             <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/129.jpg"/>
-            <guid/>
-            <pubDate>Fri, 07 Jul 2023 11:00:17 </pubDate>
+            <guid>itm20230706</guid>
+            <pubDate>Thu, 06 Jul 2023 18:30:17 </pubDate>
             <itunes:duration>841.09</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
