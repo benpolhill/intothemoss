@@ -23,12 +23,12 @@
             <itunes:episode>12</itunes:episode>
             <itunes:season>9</itunes:season>
             <title>Pigeon</title>
-            <description/>
+            <description>Telephone dial up audiobook with fragments by Brittney Fleming</description>
             <enclosure url="https://intothemoss.com/audio/130.mp3" length="14072109" type="audio/mpeg"/>
             <link>https://intothemoss.com/episodes/130</link>
             <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/130.jpg"/>
-            <guid/>
-            <pubDate>Tue, 18 Jul 2023 08:19:33 </pubDate>
+            <guid>itm20230713</guid>
+            <pubDate>Thu, 13 Jul 2023 18:30:33 </pubDate>
             <itunes:duration>841.09</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
