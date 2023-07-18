@@ -13,6 +13,10 @@ def get_latest_file():
     return sorted(glob.glob('./audio/*.mp3'))[-1]
 
 def get_file_info(latest_file):
+    print("Getting MP3 tags....")
+    for tag, val in ID3(latest_file).items():
+        if (tag != 'APIC:Album cover'):
+            print(tag, val)
     return ID3(latest_file)
 
 def get_audio_info(latest_file):
@@ -119,18 +123,18 @@ def main():
     episode_id = latest_file.split('/')[-1].replace('.mp3', '')
     season = info.get('TPOS').text[0] if info.get('TPOS') else ''
     title = info.get('TIT2').text[0] if info.get('TIT2') else ''
-    desc = info.get('TDES').text[0] if info.get('TDES') else ''
+    desc = info.get('TXXX:TDES').text[0] if info.get('TXXX:TDES') else ''
     url = f"https://intothemoss.com/audio/{episode_id}.mp3"
     length = get_file_length(latest_file)
     image = f"https://intothemoss.com/assets/images/jpg/1400/{episode_id}.jpg"
     link = "https://intothemoss.com/episodes/" + episode_id
-    guid = info.get('TGID').text[0] if info.get('TGID') else ''
+    # guid = info.get('TGID').text[0] if info.get('TGID') else ''
     # pubdate = tgid_to_datetime(info['TGID'][0]).strftime("%a, %d %b %Y %H:%M:%S %z")
     # pubdate = tgid_to_datetime(guid).strftime("%a, %d %b %Y %H:%M:%S %z")
     # Get 'TGID' if it exists, otherwise use a default value
-    tgid = info.get('TGID')
+    tgid = info.get('TXXX:TGID').text[0] if info.get('TXXX:TGID') else ''
     if tgid is not None:
-        pubdate = tgid_to_datetime(tgid.text[0][3:]).strftime("%a, %d %b %Y %H:%M:%S %z")
+        pubdate = tgid_to_datetime(tgid).strftime("%a, %d %b %Y %H:%M:%S %z")
     else:
     # use a default date, for example current date
         pubdate = datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z")
@@ -146,7 +150,7 @@ def main():
         ET.register_namespace(prefix, uri)
 
     # create a new item
-    new_item = create_new_item(info, namespaces, latest_file, audio, episode, season, title, desc, url, length, image, link, guid, pubdate, duration, explicit)
+    new_item = create_new_item(info, namespaces, latest_file, audio, episode, season, title, desc, url, length, image, link, tgid, pubdate, duration, explicit)
 
     # parse xml
     tree = ET.parse('./feed.xml')
