@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Seedlings</title>
+            <description>Impenetrable street of limitless bakers, bread on top of bread.</description>
+            <enclosure url="https://intothemoss.com/audio/134.mp3" length="18209931" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/134</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/134.jpg"/>
+            <guid>itm20230914</guid>
+            <pubDate>Thu, 14 Sep 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.25</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>1</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Triassic</title>
