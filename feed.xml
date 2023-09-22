@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>3</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Instruments</title>
+            <description>Time is a phantom, unmasked in the final chime, as nothing at all.</description>
+            <enclosure url="https://intothemoss.com/audio/135.mp3" length="17297265" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/135</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/135.jpg"/>
+            <guid>itm20230921</guid>
+            <pubDate>Thu, 21 Sep 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>2</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Seedlings</title>
