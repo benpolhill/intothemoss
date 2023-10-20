@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Lacteal</title>
+            <description>In coveted chair, microdosing ethanol, salad haunts me still.</description>
+            <enclosure url="https://intothemoss.com/audio/139.mp3" length="16587718" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/139</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/139.jpg"/>
+            <guid>itm20231019</guid>
+            <pubDate>Thu, 19 Oct 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.44</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Nonsense</title>
