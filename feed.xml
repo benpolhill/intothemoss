@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Nonsense</title>
+            <description>O hungry hunter, climb the stairs of the taste buds, and eat the city!</description>
+            <enclosure url="https://intothemoss.com/audio/138.mp3" length="20316492" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/138</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/138.jpg"/>
+            <guid>itm20231012</guid>
+            <pubDate>Thu, 12 Oct 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Infatigable</title>
