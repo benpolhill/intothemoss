@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>8</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Bloodshot</title>
+            <description>Ignore the voices and listen to the morning. Give another chance.</description>
+            <enclosure url="https://intothemoss.com/audio/140.mp3" length="14934457" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/140</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/140.jpg"/>
+            <guid>itm20231026</guid>
+            <pubDate>Thu, 26 Oct 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>7</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Lacteal</title>
