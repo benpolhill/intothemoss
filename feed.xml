@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>9</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Origami</title>
+            <description>Engaged Listening Skills For Workplace Efficiency: It's a fragile snare.</description>
+            <enclosure url="https://intothemoss.com/audio/141.mp3" length="14394428" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/141</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/141.jpg"/>
+            <guid>itm20231102</guid>
+            <pubDate>Thu, 02 Nov 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>842.03</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>8</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Bloodshot</title>
