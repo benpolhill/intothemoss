@@ -64,7 +64,6 @@ body {
     background: #0c0d10;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    height: 100vw;
 }
 body, a {
     color: #f5f5f5;
@@ -89,9 +88,6 @@ h1, h2, h3, h4, .id {
 h4 {
     font-weight: 800;
 }
-h2 a, h3 a, h4 a {
-    /* color: #BE9460; */
-}
 main.home {
     width: 100vw;
     display: flex;
@@ -101,7 +97,6 @@ audio {
     width: 100%;
 }
 article {
-    /* border-bottom: 1px solid #344c0b; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -110,13 +105,6 @@ article .episode-player-image {
     height: 150px;
     flex: 0 0 auto;
     padding: 1rem 1rem 1rem 0;
-}
-#episode-player .episode-player-image {
-    /* width: 100%; */
-    /* margin: 0 1.5rem 1.5rem 0; */
-    /* position: absolute; */
-    /* width: 100vw; */
-    /* height: 100vh; */
 }
 .episode-player-image {
     flex: 1 0 auto;
@@ -137,7 +125,6 @@ article .episode-player-image {
     object-fit: contain;
 }
 article .info {
-    /* display: flex; */
     flex-direction: column;
     flex: 1 0 40%;
 }
@@ -163,12 +150,6 @@ article .info {
     align-items: center;
     justify-content: center;
 }
-/* #episode-player #player-info {
-    max-width: 600px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 3px;
-    outline: 30px solid rgba(0,0,0,0.5);
-} */
 .player-info-container {
     display: flex;
     justify-content: center;
