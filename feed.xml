@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>11</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Switches</title>
+            <description>Bulging bloodshot eyes, born too soon to be shuttered. A throng congregates.</description>
+            <enclosure url="https://intothemoss.com/audio/143.mp3" length="14684801" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/143</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/143.jpg"/>
+            <guid>itm20231116</guid>
+            <pubDate>Thu, 16 Nov 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>10</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Tumble</title>
