@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>10</itunes:episode>
+            <itunes:season>10</itunes:season>
+            <title>Tumble</title>
+            <description>Silent aftermath of cats nurtured by insects. The dust of ages.</description>
+            <enclosure url="https://intothemoss.com/audio/142.mp3" length="13924083" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/142</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/142.jpg"/>
+            <guid>itm20231109</guid>
+            <pubDate>Thu, 09 Nov 2023 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>9</itunes:episode>
             <itunes:season>10</itunes:season>
             <title>Origami</title>
