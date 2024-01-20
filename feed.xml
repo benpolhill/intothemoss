@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>2</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Nightingale</title>
+            <description>See the Nightingale whirr to where the air is thin. Wait for what will be.</description>
+            <enclosure url="https://intothemoss.com/audio/149.mp3" length="18684160" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/149</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/149.jpg"/>
+            <guid>itm20240118</guid>
+            <pubDate>Thu, 18 Jan 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.25</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>1</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Gallows</title>
