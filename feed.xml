@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Plough</title>
+            <description>Dark across the brow, the fields are met by fingers scratching in the dirt.</description>
+            <enclosure url="https://intothemoss.com/audio/154.mp3" length="17205959" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/154</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/154.jpg"/>
+            <guid>itm20240322</guid>
+            <pubDate>Fri, 22 Mar 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Fundraiser</title>
