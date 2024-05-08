@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>14</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Obsidian</title>
+            <description>With Obsidian, fault's with the candidate, or there's no fault at all.</description>
+            <enclosure url="https://intothemoss.com/audio/161.mp3" length="18282144" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/161</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/161.jpg"/>
+            <guid>itm20240411</guid>
+            <pubDate>Thu, 11 Apr 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>13</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Etiquette</title>
