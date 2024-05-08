@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>15</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Butcher</title>
+            <description>Definitely, the Pencilman’s virility. Certainly it is.</description>
+            <enclosure url="https://intothemoss.com/audio/162.mp3" length="15931572" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/162</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/162.jpg"/>
+            <guid>itm20240418</guid>
+            <pubDate>Thu, 18 Apr 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>14</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Obsidian</title>
