@@ -3,6 +3,7 @@
 ROOT_DIR=`pwd`
 IMGS_DIR=$ROOT_DIR/assets/images
 AUDIO_DIR=$ROOT_DIR/audio
+EP_ID=$1
 
 echo "ROOT_DIR: $ROOT_DIR"
 echo "IMGS_DIR: $IMGS_DIR"
@@ -77,7 +78,7 @@ season="$season"
 album="Season $season"
 tgid="itm$date_input"
 
-# Setting metadata to a temp file
+# Save metadata to a temp file
 ffmpeg -i "$audio_file_path" -i "$img_file_path/$tracknum.jpg" -map 0 -map 1 -c copy \
     -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" \
     -metadata track="$track" -metadata title="$title" -metadata artist="$artist" \
