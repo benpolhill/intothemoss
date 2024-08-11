@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>22</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Gels</title>
+            <description>Resolute harness. Familial bonds transplant hair. Daughter risen high.</description>
+            <enclosure url="https://intothemoss.com/audio/169.mp3" length="13613776" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/169</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/169.jpg"/>
+            <guid>itm20240613</guid>
+            <pubDate>Thu, 13 Jun 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>21</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Woodlands</title>
