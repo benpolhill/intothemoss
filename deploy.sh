@@ -86,16 +86,16 @@ read description
 # Other metadata
 img_file_path="$IMGS_DIR/jpg/1400"
 tracknum=${audio_file_name%.*}
-artist="M"
-album_artist="w"
+artist="Into the Moss"
+album_artist="Into the Moss"
 genre="Ambient"
-comment="First broadcast $(date +'%d %b %Y') on M"
+comment="First broadcast $(date +'%d %b %Y') on Resonance FM"
 copyright="© M $(date +'%Y')"
 season="$season"
 album="Season $season"
 tgid="itm$date_input"
 
-# Setting metadata to a temp file
+# Set metadata to a temp file
 ffmpeg -i "$audio_file_path" -i "$img_file_path/$tracknum.jpg" -map 0 -map 1 -c copy \
     -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" \
     -metadata track="$track" -metadata title="$title" -metadata artist="$artist" \
