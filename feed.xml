@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>25</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Troglodytes</title>
+            <description>Fingers guide this one, digits point with urgency. Idiot for sale.</description>
+            <enclosure url="https://intothemoss.com/audio/172.mp3" length="17267804" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/172</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/172.jpg"/>
+            <guid>itm20240704</guid>
+            <pubDate>Thu, 04 Jul 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>24</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Drooling</title>
