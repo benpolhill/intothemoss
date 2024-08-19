@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>26</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Recreation</title>
+            <description>Emerald gardens tilt towards the dying sun, as visitors fall.</description>
+            <enclosure url="https://intothemoss.com/audio/173.mp3" length="13278397" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/173</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/173.jpg"/>
+            <guid>itm20240711</guid>
+            <pubDate>Thu, 11 Jul 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>25</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Troglodytes</title>
