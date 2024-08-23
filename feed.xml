@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>27</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Noble</title>
+            <description>A door-whisperer, hiding the resident truth, praise for the shut door.</description>
+            <enclosure url="https://intothemoss.com/audio/174.mp3" length="16611755" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/174</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/174.jpg"/>
+            <guid>itm20240718</guid>
+            <pubDate>Thu, 18 Jul 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>26</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Recreation</title>
