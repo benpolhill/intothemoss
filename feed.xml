@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>28</itunes:episode>
+            <itunes:season>11</itunes:season>
+            <title>Vertiginous</title>
+            <description>Rise from shore to sky, evaporated opera. Dissolve in water.</description>
+            <enclosure url="https://intothemoss.com/audio/175.mp3" length="14697610" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/175</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/175.jpg"/>
+            <guid>itm20240725</guid>
+            <pubDate>Thu, 25 Jul 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>27</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Noble</title>
