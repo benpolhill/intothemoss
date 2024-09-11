@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>1</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Flasks</title>
+            <description>Dive into the folds, annihilation awaits Prig floating in the pool.</description>
+            <enclosure url="https://intothemoss.com/audio/176.mp3" length="18004968" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/176</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/176.jpg"/>
+            <guid>itm20240912</guid>
+            <pubDate>Thu, 12 Sep 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.02</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>28</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Vertiginous</title>
