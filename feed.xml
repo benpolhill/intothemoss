@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>3</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Pinpricks</title>
+            <description>What you do not know lies somewhere on the inside. Open up and see.</description>
+            <enclosure url="https://intothemoss.com/audio/178.mp3" length="16964611" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/178</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/178.jpg"/>
+            <guid>itm20240926</guid>
+            <pubDate>Thu, 26 Sep 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>2</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Skywards</title>
