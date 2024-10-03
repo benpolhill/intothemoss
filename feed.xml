@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>4</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Folio</title>
+            <description>Permitted to leave, circumambulation stirs ambivalent ways.</description>
+            <enclosure url="https://intothemoss.com/audio/179.mp3" length="19297499" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/179</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/179.jpg"/>
+            <guid>itm20241003</guid>
+            <pubDate>Thu, 03 Oct 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>3</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Pinpricks</title>
