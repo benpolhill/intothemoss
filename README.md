@@ -45,11 +45,9 @@ The MP3 is then saved in `/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three 
 
 The images should be exported as Jpeg at 1400x1400, with quality set around 10, so file size is kept below 200K. The image is saved in `/assets/images/jpg/1400/[EPISODE_NUMBER].jpg` 
 
-The podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.com/feed.xml](https://intothemoss.com/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
+### 3. Run the deployment script 
 
-## Local Dropbox integration
-All files in my local repo: `/episodes/[audio|images|text]` are synced from the files in `Dropbox/Into the Moss/Website/` via an `fswatch` command in `~/Library/Scripts/startup.sh`:
 ```bash
-fswatch /Users/ben_polhill/Dropbox/Into\ the\ Moss/Website/ | (while read x; do echo $x | rsync -av --delete /Users/ben_polhill/Dropbox/Into\ the\ Moss/Website/ /Users/ben_polhill/Development/intothemoss/episodes; done)
+./deploy.sh 
 ```
-This means anyone with access to the Dropbox folder can just save files in the relevent places in `/Website` and not have to worry about all the Git shenanigens.
+The podcasts are published via [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/) using the XML file at [intothemoss.com/feed.xml](https://intothemoss.com/feed.xml). This is the feed registered with the podcast providers (Google/Apple/Stitcher/etc.).
