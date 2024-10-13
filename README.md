@@ -1,5 +1,23 @@
 # Into the Moss Website
 
+## Prerequisites (Mac)
+
+* Homebrew
+* Python 3.8 or above
+
+Install homebrew as per the instructions here. 
+You'll probably already have Python 3.* on your system. Check with
+```bash
+python --version
+```
+
+* ffmpeg
+* Imagemagick
+
+With Homebrew installed, you can install all the above with:
+```bash
+brew install ffmpeg && brew install imagemagick
+```
 ## Podcast release workflow
 ### 1. Encode the MP3
 
