@@ -14,7 +14,7 @@ ffmpeg -i 001.wav -ab 320k 001.mp3
 The MP3 is then saved in `/episodes/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three digits, i.e. 022.mp3.
 ### 2. Save episode artwork
 
-The images should be exported as Jpeg at 1400x1400, with quality set around 10, so file size is kept below 200K. The image is saved in `/episodes/images/[EPISODE_NUMBER].jpg` 
+The images should be exported as Jpeg at 1400x1400, with quality set around 10, so file size is kept below 200K. The image is saved in `/assets/images/jpg/1400/[EPISODE_NUMBER].jpg` 
 ### 3. Tag the MP3
 
 Use the [ID3 Editor](http://www.pa-software.com/id3editor/) and ensure the following fields are filled in:
