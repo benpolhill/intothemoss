@@ -5,7 +5,7 @@
 * Homebrew
 * Python 3.8 or above
 
-Install homebrew as per the instructions here. 
+Install homebrew as per the [instructions here](https://brew.sh/).
 You'll probably already have Python 3.* on your system. Check with
 ```bash
 python --version
@@ -18,6 +18,17 @@ With Homebrew installed, you can install all the above with:
 ```bash
 brew install ffmpeg && brew install imagemagick
 ```
+## Initial setup 
+
+Do this once, before releasing any episodes:
+```
+git config --global user.name "intothemoss"
+git config --global user.email "intothemoss@gmail.com"
+git clone https://github.com/benpolhill/intothemoss.git
+cd intothemoss
+rsync -av root@dept2.co/var/www/intothemoss/audio/ ./audio
+```
+
 ## Podcast release workflow
 ### 1. Encode the MP3
 
@@ -29,7 +40,7 @@ ffmpeg -i 001.wav -q:a 5 001.mp3
 ```
 ffmpeg -i 001.wav -ab 320k 001.mp3
 ```
-The MP3 is then saved in `/episodes/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three digits, i.e. 022.mp3.
+The MP3 is then saved in `/audio/[EPISODE_NUMBER].mp3`. EPISODE_NUMBER is three digits, i.e. 022.mp3.
 ### 2. Save episode artwork
 
 The images should be exported as Jpeg at 1400x1400, with quality set around 10, so file size is kept below 200K. The image is saved in `/assets/images/jpg/1400/[EPISODE_NUMBER].jpg` 
