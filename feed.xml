@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Pout</title>
+            <description>For years rusted shut, a heart left out in the rain balances the scales.</description>
+            <enclosure url="https://intothemoss.com/audio/181.mp3" length="14043664" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/181</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/181.jpg"/>
+            <guid>itm20241017</guid>
+            <pubDate>Thu, 17 Oct 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Turn</title>
