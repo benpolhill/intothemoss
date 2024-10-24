@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>7</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Pesto</title>
+            <description>Pesto Pasta Man is luckily unaware of cosmic fist-bumps.</description>
+            <enclosure url="https://intothemoss.com/audio/182.mp3" length="20047617" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/182</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/182.jpg"/>
+            <guid>itm20241024</guid>
+            <pubDate>Thu, 24 Oct 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>6</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Pout</title>
