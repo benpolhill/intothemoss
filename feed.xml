@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>12</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Augur</title>
+            <description>Forgetness spins dizzy water memories, jumping in the stream.</description>
+            <enclosure url="https://intothemoss.com/audio/187.mp3" length="16111131" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/187</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/187.jpg"/>
+            <guid>itm20241128</guid>
+            <pubDate>Thu, 28 Nov 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>11</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Solace</title>
