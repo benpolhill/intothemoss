@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>13</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Spoilsports</title>
+            <description>Freed from ancestry, I thought the clocks had gone back. Horology, eeuch!</description>
+            <enclosure url="https://intothemoss.com/audio/188.mp3" length="18851933" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/188</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/188.jpg"/>
+            <guid>itm20241205</guid>
+            <pubDate>Thu, 05 Dec 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>12</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Augur</title>
