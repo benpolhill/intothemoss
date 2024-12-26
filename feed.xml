@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>15</itunes:episode>
+            <itunes:season>12</itunes:season>
+            <title>Sprouts</title>
+            <description>Faces from the ice, promising the past again, sprouting and awake.</description>
+            <enclosure url="https://intothemoss.com/audio/190.mp3" length="12565952" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/190</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/190.jpg"/>
+            <guid>itm20241219</guid>
+            <pubDate>Thu, 19 Dec 2024 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>14</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Tractor</title>
