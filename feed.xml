@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>1</itunes:episode>
+            <itunes:season>13</itunes:season>
+            <title>Latrine</title>
+            <description>The theif in the sky reaches for the colour chart when the lights go out.</description>
+            <enclosure url="https://intothemoss.com/audio/191.mp3" length="12527292" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/191</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/191.jpg"/>
+            <guid>itm20250116</guid>
+            <pubDate>Thu, 16 Jan 2025 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>15</itunes:episode>
             <itunes:season>12</itunes:season>
             <title>Sprouts</title>
