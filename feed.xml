@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>5</itunes:episode>
+            <itunes:season>13</itunes:season>
+            <title>Sweaty</title>
+            <description>From the clammy palms to the jittery toe-tacs: pizza directions.</description>
+            <enclosure url="https://intothemoss.com/audio/195.mp3" length="15082597" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/195</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/195.jpg"/>
+            <guid>itm20250214</guid>
+            <pubDate>Fri, 14 Feb 2025 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>4</itunes:episode>
             <itunes:season>13</itunes:season>
             <title>Thumping</title>
