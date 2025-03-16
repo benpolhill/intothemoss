@@ -20,6 +20,19 @@
         </itunes:owner>
         <itunes:explicit>false</itunes:explicit>
         <item>
+            <itunes:episode>6</itunes:episode>
+            <itunes:season>13</itunes:season>
+            <title>Caprine</title>
+            <description>People in the sky, goats in the volcanic caves. How will it all end?</description>
+            <enclosure url="https://intothemoss.com/audio/196.mp3" length="14479982" type="audio/mpeg"/>
+            <link>https://intothemoss.com/episodes/196</link>
+            <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/196.jpg"/>
+            <guid>itm20250221</guid>
+            <pubDate>Fri, 21 Feb 2025 18:30:00 +0000</pubDate>
+            <itunes:duration>840.05</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+        <item>
             <itunes:episode>5</itunes:episode>
             <itunes:season>13</itunes:season>
             <title>Sweaty</title>
@@ -530,7 +543,7 @@
             <itunes:episode>9</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Rose</title>
-            <description>The red-flag woman, tweed-sleeved arm outstretched, spraying: &quot;dogs are mist's princes&quot;.</description>
+            <description>The red-flag woman, tweed-sleeved arm outstretched, spraying: "dogs are mist's princes".</description>
             <enclosure url="https://intothemoss.com/audio/156.mp3" length="15817990" type="audio/mpeg"/>
             <link>https://intothemoss.com/episodes/156</link>
             <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/156.jpg"/>
@@ -634,7 +647,7 @@
             <itunes:episode>1</itunes:episode>
             <itunes:season>11</itunes:season>
             <title>Gallows</title>
-            <description>Don't give me all that &quot;la-di-da-di-da&quot;, I'm sick of people like you.</description>
+            <description>Don't give me all that "la-di-da-di-da", I'm sick of people like you.</description>
             <enclosure url="https://intothemoss.com/audio/148.mp3" length="17589897" type="audio/mpeg"/>
             <link>https://intothemoss.com/episodes/148</link>
             <itunes:image href="https://intothemoss.com/assets/images/jpg/1400/148.jpg"/>
